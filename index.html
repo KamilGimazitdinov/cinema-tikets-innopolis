@@ -8,51 +8,53 @@
 </head>
     
 <body>
-    
-    <header><!--Информация о кинотеатре-->
-             <!--Информация о кинотеатре сверху верхняя строка-->
-            <a href="tel:+7 (800) 355 12-56" target="_blank">+7 (800) 355 12-56</a>
-            <a href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
-            <span>ул.Спортивная д.1</span>
-            <button >Заказать звонок</button>
-            <select name=”language” size=”2”>
-                <option value=""> RU </option>
-                <option value=""> EN </option>
-            </select>
-            
-        <nav><!--Информация о кинотеатре сверху нижняя строка-->
-            <a href="#why-we">Почему мы?</a>
-            <a href="#films">Фильмы</a>
-            <a href="#reviews">Отзывы</a>
-            <a href="#gift">Подарок каждому</a>
-            <a href="#feedback">Обратная связь</a>
-        </nav>
-    </header>    
-        <div id="main">
-            <h1>Закажите билет в кино</h1>
-            <h2>Всем покупателям подарок!</h2>
-        </div>
+    <section id="main">
+        <header><!--Информация о кинотеатре-->
+                <!--Информация о кинотеатре сверху верхняя строка-->
+                <a href="tel:+7 (800) 355 12-56" target="_blank">+7 (800) 355 12-56</a>
+                <a href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
+                <span>ул.Спортивная д.1</span>
+                <button >Заказать звонок</button>
+                <select name=”language” size=”2”>
+                    <option value=""> RU </option>
+                    <option value=""> EN </option>
+                </select>
+                
+            <nav><!--Информация о кинотеатре сверху нижняя строка-->
+                <a title="Почему мы?" href="#why-we">Почему мы?</a>
+                <a title="Фильмы" href="#films">Фильмы</a>
+                <a title="Отзывы" href="#reviews">Отзывы</a>
+                <a title="Подарок каждому" href="#gift">Подарок каждому</a>
+                <a title="Обратная связь" href="#feedback">Обратная связь</a>
+            </nav>
+        </header>    
+            <div>
+                <h1>Закажите билет в кино</h1>
+                <h2>Всем покупателям подарок!</h2>
+            </div>
 
 
-        <span>
-            Добро пожаловать
-        </span>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Magnam eveniet totam rem laboriosam! Deleniti explicabo non iusto culpa odit dolore architecto,
-                temporibus impedit praesentium eveniet asperiores, deserunt maxime mollitia aliquam ut? 
-                Dicta animi similique expedita eligendi explicabo recusandae facilis saepe voluptatibus eaque id?
-                Ex quisquam praesentium doloribus, tempore eaque eligendi, veniam, odio veritatis impedit pariatur dicta perspiciatis laboriosam.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Magnam eveniet totam rem laboriosam! Deleniti explicabo non iusto culpa odit dolore architecto,
-                temporibus impedit praesentium eveniet asperiores, deserunt maxime mollitia aliquam ut? 
-            </p>
+            <span>
+                Добро пожаловать
+            </span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam eveniet totam rem laboriosam! Deleniti explicabo non iusto culpa odit dolore architecto,
+                    temporibus impedit praesentium eveniet asperiores, deserunt maxime mollitia aliquam ut? 
+                    Dicta animi similique expedita eligendi explicabo recusandae facilis saepe voluptatibus eaque id?
+                    Ex quisquam praesentium doloribus, tempore eaque eligendi, veniam, odio veritatis impedit pariatur dicta perspiciatis laboriosam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam eveniet totam rem laboriosam! Deleniti explicabo non iusto culpa odit dolore architecto,
+                    temporibus impedit praesentium eveniet asperiores, deserunt maxime mollitia aliquam ut? 
+                </p>
+    </section>
 
             <section id="why-we">
                 <h2>Почему мы?</h2>
                 <div> 
+                    <img src="./images/whywe?/bol'shiyeekrany.svg">
                     <h3>Большие экраны</h3>
                     <p> 
                         Lorem ipsum dolor sit amet, consectetur
@@ -115,6 +117,37 @@
 
             <section> <!--Таблица сеансов-->
                     <h2>Выберите фильм</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Начало сеанса</th>
+                                <th>Название фильма</th>
+                                <th>Жанр</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >10:00</td>
+                                <td><a href="https://www.kinopoisk.ru/film/838/" target="_block">Человек-паук</a></td>
+                                <td>Фантастика, боевик, приключения</td>
+                            </tr>
+                            <tr>
+                                <td>12:00</td>
+                                <td><a href="https://www.kinopoisk.ru/film/1122114/" target="_block">Собачья жизнь 2</a></td>
+                                <td>Фэнтэзи, драма, комедия</td>
+                            </tr>
+                            <tr>
+                                <td>14:00</td>
+                                <td><a href="https://www.kinopoisk.ru/film/846824/" target="_block">История игрушек 4</a></td>
+                                <td>Мультфильм, фэнтэзи, комедия</td>
+                            </tr>
+                            <tr>
+                                <td>16:00</td>
+                                <td><a href="https://www.kinopoisk.ru/film/693730/" target="_block">Люди в чёрном: Интэрнэшнл</a></td>
+                                <td>Фантастика, боевик, комедия</td>
+                            </tr>
+                        </tbody>
+                    </table>
             </section>
             
             <section id="gift">                
@@ -224,6 +257,9 @@
                 <div> 
                         Обратная связь
                 </div>
+                <div>
+                    <input type="text">
+                </div>
                 <!--Здесь будет форма (для заполнения) обратной связи-->
                 <div>
                     <input type="radio">
@@ -242,46 +278,46 @@
                 <!--Информация о кинотеатре 2 столбик-->
                 <nav>
                     <ul>
-                        <a href="#main">Главная</a>
+                        <li>
+                            <a title="Главная" href="#main">Главная</a>
+                        </li>
+                        <li>
+                            <a title="Почему мы?" href="#why-we">Почему мы?</a>
+                        </li>
+                        <li>
+                            <a title="Фильмы" href="#films">Фильмы</a>
+                        </li>
+                        <li>
+                            <a title="Отзывы" href="#reviews">Отзывы</a>
+                        </li>
+                        <li>
+                            <a title="Подарок каждому" href="#gift">Подарок каждому</a>
+                        </li>
+                        <li>
+                            <a title="Обратная связь" href="#">Обратная связь</a>
+                        </li>
                     </ul>
+                
+                    <!--Информация о кинотеатре 3 столбик-->
                     <ul>
-                        <a href="#why-we">Почему мы?</a>
-                    </ul>
-                    <ul>
-                        <a href="#films">Фильмы</a>
-                    </ul>
-                    <ul>
-                        <a href="#reviews">Отзывы</a>
-                    </ul>
-                    <ul>
-                        <a href="#gift">Подарок каждому</a>
-                    </ul>
-                    <ul>
-                        <a href="#">Обратная связь</a>
-                    </ul>
-                </nav>
-                <!--Информация о кинотеатре 3 столбик-->
-                    <ul>
-                        <a href="#">О нас</a>
-                    </ul>
-                    <ul>
-                        <a href="tel:+7 (800) 355 12-56">
-                            +7 (800) 355 12-56
-                        </a>
-                    </ul>
-                    <ul>
-                        <a href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
-                    </ul>
-                    <ul>
-                        <a href="#" target="_blank>">
-                            420500, г. Иннополис ул.Университетская, д.1
-                        </a>
-                    </ul>
-                    <ul>
-                        <a href="#" target="_blank">Как добраться</a>
-                    </ul>
-                    <ul>
-                        <a href="#">Все контакты</a>
+                        <li>
+                            <a title="О нас" href="#">О нас</a>
+                        </li>   
+                        <li>
+                            <a href="tel:+7 (800) 355 12-56">+7 (800) 355 12-56</a>
+                        </li>
+                        <li>
+                            <a title="Почта" href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank>">420500, г. Иннополис ул.Университетская, д.1</a>
+                        </li>
+                        <li>
+                            <a title="Как добраться" href="#" target="_blank">Как добраться</a>
+                        </li>
+                        <li>
+                            <a title="Все контакты" href="#">Все контакты</a>
+                        </li>
                     </ul>
                 </nav>
                 <span>
