@@ -9,22 +9,27 @@
         body {
             background-size: 100%;
         } 
-        #main{
+
+        #main {
             height:728px ;
             background-image: url(./images/main/bc730baf868859c8ea1bf7ada963ce99\ 1.jpg);
             background-size: cover;
         }
 
-        #gift{
+        #gift {
             height: 685px;
             background-image: url(./images/podarok/fon.png);
             background-size: cover;
         }
 
-        #reviews{
+        #reviews {
             height: 792px;
             background-image: url(./images/reviews/fon.png);
             background-size: cover;
+        }
+        
+        li {
+            list-style-type: none;
         }
     </style>
 </head>
@@ -34,27 +39,48 @@
     <section id="main">
         <header><!--Информация о кинотеатре-->
                 <!--Информация о кинотеатре сверху верхняя строка-->
-                <a href="tel:+7 (800) 355 12-56" target="_blank">+7 (800) 355 12-56</a>
-                <a href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
-                <span>ул.Спортивная д.1</span>
-                <button >Заказать звонок</button>
-                <select name=”language” size=”2”>
-                    <option value=""> RU </option>
-                    <option value=""> EN </option>
-                </select>
-                
+            <nav>
+                <ul>
+                    <li>
+                        <a href="tel:+7 (800) 355 12-56" target="_blank">+7 (800) 355 12-56</a>
+                    </li>
+                    <li>
+                        <a href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
+                    </li>
+                    <li>
+                        <span>ул.Спортивная д.1</span>
+                    </li>
+                </ul>                    
+            </nav>
+            <button>Заказать звонок</button>
+            <select name=”language” size=”2”>
+                <option value=""> RU </option>
+                <option value=""> EN </option>
+            </select>           
             <nav><!--Информация о кинотеатре сверху нижняя строка-->
-                <a title="Почему мы?" href="#why-we">Почему мы?</a>
-                <a title="Фильмы" href="#films">Фильмы</a>
-                <a title="Отзывы" href="#reviews">Отзывы</a>
-                <a title="Подарок каждому" href="#gift">Подарок каждому</a>
-                <a title="Обратная связь" href="#feedback">Обратная связь</a>
+                <ul>
+                    <li>
+                        <a title="Почему мы?" href="#why-we">Почему мы?</a>
+                    </li>
+                    <li>
+                        <a title="Фильмы" href="#films">Фильмы</a>
+                    </li>
+                    <li>
+                        <a title="Отзывы" href="#reviews">Отзывы</a>
+                    </li>
+                    <li>    
+                        <a title="Подарок каждому" href="#gift">Подарок каждому</a>
+                    </li>
+                    <li>
+                        <a title="Обратная связь" href="#feedback">Обратная связь</a>
+                    </li>
+                </ul>
             </nav>
         </header>    
-            <div>
-                <h1>Закажите билет в кино</h1>
-                <h2>Всем покупателям подарок!</h2>
-            </div>
+        <div>
+            <h1>Закажите билет в кино</h1>
+            <h2>Всем покупателям подарок!</h2>
+        </div>
 
         <div>
             <span>
@@ -76,310 +102,313 @@
     </section>
 
 
-            <section id="why-we">
-                <h2>Почему мы?</h2>
-                <div> 
-                    <img src="./images/whywe/3yoqeQbkSg8 1.png" alt="Большой экран">
-                    <h3>Большие экраны</h3>
-                    <p> 
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam.
-                    </p>
-                </div>
+    <section id="why-we">
+        <h2>Почему мы?</h2>
+        <div> 
+            <img src="./images/whywe/3yoqeQbkSg8 1.png" alt="Большой экран">
+            <h3>Большие экраны</h3>
+            <p> 
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam.
+            </p>
+        </div>
 
-                <div> 
-                    <img src="./images/whywe/zvyk.png" alt="Объемный звук">
-                    <h3>Объемный звук</h3>
-                    <p> 
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam.
-                    </p>
-                </div>
+        <div> 
+            <img src="./images/whywe/zvyk.png" alt="Объемный звук">
+            <h3>Объемный звук</h3>
+            <p> 
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam.
+            </p>
+        </div>
 
-                <div> 
-                    <img src="./images/whywe/kresla.png" alt="Удобные кресла">
-                    <h3>Удобные кресла</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam.
-                    </p> 
-                </div>
+        <div> 
+            <img src="./images/whywe/kresla.png" alt="Удобные кресла">
+            <h3>Удобные кресла</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam.
+            </p> 
+        </div>
             
-                <div> 
-                    <img src="./images/whywe/atmosfera.png" alt="Уютная атмосфера">
-                    <h3>Уютная атмосфера</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam.
-                    </p> 
-                </div>
+        <div> 
+            <img src="./images/whywe/atmosfera.png" alt="Уютная атмосфера">
+            <h3>Уютная атмосфера</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam.
+            </p> 
+        </div>
                             
-                <div> 
-                    <img src="./images/whywe/pogruzhenie.png" alt="Полное погружение">
-                    <h3>Полное погружение</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam.
-                    </p> 
-                </div>
+        <div> 
+            <img src="./images/whywe/pogruzhenie.png" alt="Полное погружение">
+            <h3>Полное погружение</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam.
+            </p> 
+        </div>
                             
-                <div> 
-                    <img src="./images/whywe/kiss.png" alt="Поцелуи на заднем ряду">
-                    <h3>Поцелуи на заднем ряду</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam.
-                    </p>
-                </div>
-            </section>
+        <div> 
+            <img src="./images/whywe/kiss.png" alt="Поцелуи на заднем ряду">
+            <h3>Поцелуи на заднем ряду</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam.
+            </p>
+        </div>
+    </section>
 
-            <section> <!--Таблица сеансов-->
-                    <h2>Выберите фильм</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Начало сеанса<img src="./images/tablica/treygvverh.png" alt="треугольник вверх"></th>
-                                <th>Название фильма<img src="./images/tablica/treygvniz.png" alt="треугольник вниз"></th>
-                                <th>Жанр</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td ><img src="./images/tablica/galochka.png" alt="галочка">10:00</td>
-                                <td><a href="https://www.kinopoisk.ru/film/838/" target="_block">Человек-паук</a></td>
-                                <td>Фантастика, боевик, приключения</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./images/tablica/galochka.png" alt="галочка">12:00</td>
-                                <td><a href="https://www.kinopoisk.ru/film/1122114/" target="_block">Собачья жизнь 2</a></td>
-                                <td>Фэнтэзи, драма, комедия</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./images/tablica/galochka.png" alt="галочка">14:00</td>
-                                <td><a href="https://www.kinopoisk.ru/film/846824/" target="_block">История игрушек 4</a></td>
-                                <td>Мультфильм, фэнтэзи, комедия</td>
-                            </tr>
-                            <tr>
-                                <td><img src="./images/tablica/galochka.png" alt="галочка">16:00</td>
-                                <td><a href="https://www.kinopoisk.ru/film/693730/" target="_block">Люди в чёрном: Интэрнэшнл</a></td>
-                                <td>Фантастика, боевик, комедия</td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </section>
+    <section> <!--Таблица сеансов-->
+        <h2>Выберите фильм</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Начало сеанса<img src="./images/tablica/treygvverh.png" alt="треугольник вверх"></th>
+                    <th>Название фильма<img src="./images/tablica/treygvniz.png" alt="треугольник вниз"></th>
+                    <th>Жанр</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td ><img src="./images/tablica/galochka.png" alt="галочка">10:00</td>
+                    <td><a href="https://www.kinopoisk.ru/film/838/" target="_block">Человек-паук</a></td>
+                    <td>Фантастика, боевик, приключения</td>
+                </tr>
+                <tr>
+                    <td><img src="./images/tablica/galochka.png" alt="галочка">12:00</td>
+                    <td><a href="https://www.kinopoisk.ru/film/1122114/" target="_block">Собачья жизнь 2</a></td>
+                    <td>Фэнтэзи, драма, комедия</td>
+               </tr>
+                <tr>
+                    <td><img src="./images/tablica/galochka.png" alt="галочка">14:00</td>
+                    <td><a href="https://www.kinopoisk.ru/film/846824/" target="_block">История игрушек 4</a></td>
+                    <td>Мультфильм, фэнтэзи, комедия</td>
+                </tr>
+                <tr>
+                    <td><img src="./images/tablica/galochka.png" alt="галочка">16:00</td>
+                    <td><a href="https://www.kinopoisk.ru/film/693730/" target="_block">Люди в чёрном: Интэрнэшнл</a></td>
+                    <td>Фантастика, боевик, комедия</td>
+                </tr>
+            </tbody>
+       </table>
+    </section>
             
-            <section id="gift" style="background-image: url(./images/podarok/fon.png);">                
-                <h2>Подарок каждому</h2>
-                <img src="./images/podarok/podarok.png" alt="Подарок" style="border-radius: 50%; width: 303px">                
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. 
-                    Ut pharetra sit amet aliquam id diam maecenas. 
-                    
-                    Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis 
-                    imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum 
-                    morbi blandit cursus risus at ultrices mi tempus. 
+    <section id="gift" style="background-image: url(./images/podarok/fon.png);">                
+        <h2>Подарок каждому</h2>
+        <img src="./images/podarok/podarok.png" alt="Подарок" style="border-radius: 50%; width: 303px">                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. 
+            Ut pharetra sit amet aliquam id diam maecenas. 
+            
+            Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis 
+            imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum 
+            morbi blandit cursus risus at ultrices mi tempus.
+        
+            Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit 
+            amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium quam vulputate. 
+            Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi cras fermentum odio eu feugiat 
+            pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum.
+        </p>
+        <button type="submit">Получить подарок</button>
+    </section>
 
-                    Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit 
-                    amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium quam vulputate. 
-                    Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi cras fermentum odio eu feugiat 
-                    pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum.
-                </p>
-                <button>Получить подарок</button>
-            </section>
+    <section id="films"> <!-- в этом диве будет мозайка фильмов -->
+        <h2>Фильмы</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
+        </p>
+        <img src="./images/mozaika/vizhivshii.png" alt="Постер фильма">
+        <div>
+            <div><b>Выживший</b></div>
+            Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+            Nibh mauris cursus mattis molestie a iaculis at. 
+            Vel quam elementum pulvinar etiam non quam. 
+            Ut pharetra sit amet aliquam id diam maecenas. 
+        </div>
+        <img src="./images/mozaika/led.png" alt="Постер фильма">
+        <img src="./images/mozaika/marsianin.png" alt="Постер фильма">
+        <img src="./images/mozaika/dsfsdg.png" alt="Постер фильма">
+        <img src="./images/mozaika/976801.png" alt="Постер фильма">
+        <img src="./images/mozaika/territoria.png" alt="Постер фильма">
+        <img src="./images/mozaika/unnamed.png" alt="Постер фильма">
+        <img src="./images/mozaika/zhivoe.png" alt="Постер фильма">
+        <img src="./images/mozaika/dfsdf.png" alt="Постер фильма">
+    </section> <!-- не забыть о мозайке фильмов -->
 
-            <section id="films"> <!-- в этом диве будет мозайка фильмов -->
-                <h2>Фильмы</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
-                </p>
-                <img src="./images/mozaika/vizhivshii.png" alt="Постер фильма">
+    <section> <!-- товары для покупки -->
+        <h2>Товары</h2>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
+        </div>
+        <div>
+            <img src="./images/tovary/cola.png" alt="Сoca-Cola">
+            <h4>Сoca-Cola</h4>
+        </div>
+        <div>
+            <img src="./images/tovary/brelok.png" alt="Брелок 'Железный человек'">
+            <h4>Брелок "Железный человек"</h4>
+        </div>
+        <div>
+            <img src="./images/tovary/poster.png" alt="Постер 'Мстители'">
+            <h4>Постер 'Мстители'</h4>
+        </div> <!-- товары для покупки конец -->
+    </section>
+
+
+    <section id="reviews"> <!-- отзывы -->    
+        <h2>Отзывы</h2>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
+        </div>
+            <div> <!-- отзыв 1 -->
+                <img src="./images/reviews/lena.png" alt="Фото Елены">
+                <h4>Елена Еленова</h4>
                 <div>
-                    <div><b>Выживший</b></div>
                     Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. 
-                    Nibh mauris cursus mattis molestie a iaculis at. 
-                    Vel quam elementum pulvinar etiam non quam. 
-                    Ut pharetra sit amet aliquam id diam maecenas. 
+                    adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna 
+                    aliqua. 
+                    <span>
+                        13.12.2020
+                    </span>
                 </div>
-                <img src="./images/mozaika/led.png" alt="Постер фильма">
-                <img src="./images/mozaika/marsianin.png" alt="Постер фильма">
-                <img src="./images/mozaika/dsfsdg.png" alt="Постер фильма">
-                <img src="./images/mozaika/976801.png" alt="Постер фильма">
-                <img src="./images/mozaika/territoria.png" alt="Постер фильма">
-                <img src="./images/mozaika/unnamed.png" alt="Постер фильма">
-                <img src="./images/mozaika/zhivoe.png" alt="Постер фильма">
-                <img src="./images/mozaika/dfsdf.png" alt="Постер фильма">
-            </section> <!-- не забыть о мозайке фильмов -->
+            </div> <!-- отзыв 1 конец -->
 
-            <section> <!-- товары для покупки -->
-                <h2>Товары</h2>
+            <div> <!-- отзыв 2 -->
+                <img src="./images/reviews/boris.png" alt="Фото Бориса">
+                <h4>Борис Борисов</h4>
                 <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna 
+                    aliqua.
+                    <span>
+                        13.12.2020
+                    </span> 
                 </div>
-
+            </div> <!-- отзыв 2 конец -->        
+            <div> <!-- отзыв 3 -->
+                <img src="./images/reviews/leo.png" alt="Фото Леонардо">
+                <h4>Леонардо ДиКаприо</h4>
                 <div>
-                    <img src="./images/tovary/cola.png" alt="Сoca-Cola">
-                    <h4>Сoca-Cola</h4>
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna 
+                    aliqua. 
+                    <span>
+                        13.12.2020
+                    </span>
                 </div>
+            </div> <!-- отзыв 3 конец -->
+    </section> <!--отзывы конец-->
+                    
 
+    <section id="feedback"> <!-- Обратная связь -->
+        <div> 
+                Обратная связь
+        </div>
+            <img src="./images/obratnayasvyaz/fon2.jpg" alt="картинка слева">
+            <form action="/order.php">
+                <input type="text" placeholder="Полное имя" name="name" required>
                 <div>
-                    <img src="./images/tovary/brelok.png" alt="Брелок 'Железный человек'">
-                    <h4>Брелок "Железный человек"</h4>
+                    <select name="">
+                        <option value="">Номер места</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="1">6</option>
+                        <option value="2">7</option> 
+                        <option value="3">8</option>
+                        <option value="4">9</option>
+                        <option value="5">10</option>
+                    </select>
                 </div>
-                <div>
-                    <img src="./images/tovary/poster.png" alt="Постер 'Мстители'">
-                    <h4>Постер 'Мстители'</h4>
-                </div> <!-- товары для покупки конец -->
-            </section>
+                <input type="email" placeholder="Ваша электронная почта" name="name" required>
+                <textarea name="feedback" placeholder="Напишите свой отзыв"></textarea>
+            </form>
+            <input type="checkbox" id="pers-data" required>
+            <label for="pers-data">Я согласен на обработку своих персональных данных</label>
+            <div>
+                <button type="submit">Заказать</button>
+            </div>
+    </section>        
 
-
-            <section id="reviews"> <!-- отзывы -->    
-                <h2>Отзывы</h2>
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
-                </div>
-                    <div> <!-- отзыв 1 -->
-                        <img src="./images/reviews/lena.png" alt="Фото Елены">
-                            <h4>Елена Еленова</h4>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna 
-                            aliqua. 
-                            <span>
-                                13.12.2020
-                            </span>
-                        </div>
-                    </div> <!-- отзыв 1 конец -->
-
-                    <div> <!-- отзыв 2 -->
-                        <img src="./images/reviews/boris.png" alt="Фото Бориса">
-                        <h4>Борис Борисов</h4>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna 
-                            aliqua.
-                            <span>
-                                13.12.2020
-                            </span> 
-                        </div>
-                    </div> <!-- отзыв 2 конец -->
-
-                    <div> <!-- отзыв 3 -->
-                        <img src="./images/reviews/leo.png" alt="Фото Леонардо">
-                        <h4>Леонардо ДиКаприо</h4>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna 
-                            aliqua. 
-                            <span>
-                                13.12.2020
-                            </span>
-                        </div>
-                    </div> <!-- отзыв 3 конец -->
-            </section> <!--отзывы конец-->
-
-            <section id="feedback"> <!-- Обратная связь -->
-                <div> 
-                        Обратная связь
-                </div>
-                    <img src="./images/obratnayasvyaz/fon2.jpg" alt="картинка слева">
-                    <form action="/order">
-                        <input type="text" placeholder="Полное имя" name="name">
-                        <div>
-                            <select name="">
-                                <option value="">Номер места</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                        <textarea name="feedback" placeholder="Напишите свой отзыв"></textarea>
-
-                    </form>
-                    <input type="checkbox" id="pers-data">
-                    <label for="pers-data">Я согласен на обработку своих персональных данных</label>
-                    <div>
-                        <button type="submit">Послать</button>
-                    </div>
-            </section>
-
-            <footer>
-                <p><!--Информация о кинотеатре 1 столбик-->
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam    
-                </p>
-                <!--Информация о кинотеатре 2 столбик-->
-                <nav>
-                    <ul>
-                        <li>
-                            <a title="Главная" href="#main">Главная</a>
-                        </li>
-                        <li>
-                            <a title="Почему мы?" href="#why-we">Почему мы?</a>
-                        </li>
-                        <li>
-                            <a title="Фильмы" href="#films">Фильмы</a>
-                        </li>
-                        <li>
-                            <a title="Отзывы" href="#reviews">Отзывы</a>
-                        </li>
-                        <li>
-                            <a title="Подарок каждому" href="#gift">Подарок каждому</a>
-                        </li>
-                        <li>
-                            <a title="Обратная связь" href="#">Обратная связь</a>
-                        </li>
-                    </ul>
-                
-                    <!--Информация о кинотеатре 3 столбик-->
-                    <ul>
-                        <li>
-                            <a title="О нас" href="#">О нас</a>
-                        </li>   
-                        <li>
-                            <a href="tel:+7 (800) 355 12-56">+7 (800) 355 12-56</a>
-                        </li>
-                        <li>
-                            <a title="Почта" href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank>">420500, г. Иннополис ул.Университетская, д.1</a>
-                        </li>
-                        <li>
-                            <a title="Как добраться" href="#" target="_blank">Как добраться</a>
-                        </li>
-                        <li>
-                            <a title="Все контакты" href="#">Все контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <span>
-                    Copyright  @ 2020 Innopolis University . All Rights Reserved.
-                </span>
-            </footer>
+    <footer>
+        <p><!--Информация о кинотеатре 1 столбик-->
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam    
+        </p>
+        <!--Информация о кинотеатре 2 столбик-->
+        <nav>
+            <ul>
+                <li>
+                    <a title="Главная" href="#main">Главная</a>
+                </li>
+                <li>
+                    <a title="Почему мы?" href="#why-we">Почему мы?</a>
+                </li>
+                <li>
+                    <a title="Фильмы" href="#films">Фильмы</a>
+                </li>
+                <li>
+                    <a title="Отзывы" href="#reviews">Отзывы</a>
+                </li>
+                <li>
+                    <a title="Подарок каждому" href="#gift">Подарок каждому</a>
+                </li>
+                <li>
+                    <a title="Обратная связь" href="#">Обратная связь</a>
+                </li>
+            </ul>
+        
+            <!--Информация о кинотеатре 3 столбик-->
+            <ul>
+                <li>
+                    <a title="О нас" href="#">О нас</a>
+                </li>   
+                <li>
+                    <a href="tel:+7 (800) 355 12-56">+7 (800) 355 12-56</a>
+                </li>
+                <li>
+                    <a title="Почта" href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank>">420500, г. Иннополис ул.Университетская, д.1</a>
+                </li>
+                <li>
+                    <a title="Как добраться" href="#" target="_blank">Как добраться</a>
+                </li>
+                <li>
+                    <a title="Все контакты" href="#">Все контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <span>
+            Copyright  @ 2020 Innopolis University . All Rights Reserved.
+        </span>
+    </footer>        
 </body>
 </html>
