@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <!--Шрифты-->
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <title>Cinema progect</title>
 </head>
@@ -32,31 +37,35 @@
         </symbol>
     </svg>     
     <section id="main">
-            <svg style="height: 40px; width: 156px;">
-                <use xlink: href="#logo"></use>
-            </svg>
+            
         
-        <header><!--Информация о кинотеатре-->
-            <div> <!--Информация о кинотеатре сверху верхняя строка-->
-                <ul>
-                    <li>
-                        <a href="tel:+7 (800) 355 12-56" target="_blank" +7 (800) 355 12-56</a>
-                    </li>
-                    <li>
-                        <a href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
-                    </li>
-                    <li>
-                        <span>ул.Спортивная д.1</span>
-                    </li>
-                </ul>                    
-            </div>
-            <button>Заказать звонок</button>
-            <select name="language">
-                <option value=""> RU </option>
-                <option value=""> EN </option>
-            </select>               
+        <header>
+            <svg class="main__logo">
+                <use xlink: href="#logo">
+            </svg><!--Информация о кинотеатре-->
+            <div class="header__topline">
+                <div> <!--Информация о кинотеатре сверху верхняя строка-->
+                    <ul>
+                        <li>
+                            <a href="tel:+7 800 355 12-56" target="_blank" class="header__nav"> +7 800 355 12 56</a>
+                        </li>
+                        <li>
+                            <a href="mailto:kino@innopolis.ru" target="_blank" class="header__nav">kino@innopolis.ru</a>
+                        </li>
+                        <li>
+                            <span class="header__nav">ул.Спортивная д.1</span>
+                        </li>
+                    </ul>                    
+                </div>
+                <button class="header__nav">Заказать звонок</button>
+                <select name="language">
+                    <option value=""> RU </option>
+                    <option value=""> EN </option>
+                </select>
+            </div> 
+
             <nav><!--Информация о кинотеатре сверху нижняя строка-->
-                <ul>
+                <ul class="header__nav">
                     <li>
                         <a title="Почему мы?" href="#why-we">Почему мы?</a>
                     </li>
@@ -76,7 +85,7 @@
             </nav>
         </header>    
         <div>
-            <h1>Закажите билет в кино</h1>
+            <h1 class="main__title">Закажите билет в кино</h1>
             <h2>Всем покупателям подарок!</h2>
         </div>
 
@@ -101,71 +110,75 @@
 
 
     <section id="why-we">
-        <h2 class="section__headers">Почему мы?</h2>
-        <div class="why-we__top-col"> 
-            <img src="./images/whywe/3yoqeQbkSg8 1.png" alt="Большой экран" >
-            <h3 class="why-we__title">Большие экраны</h3>
-            <p class="why-we__subtitle"> 
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad 
-                minim veniam.
-            </p>
-        </div>
+        <div class="container">
+            <h2 class="section__headers">Почему мы?</h2>
+            <div class="why-we__cards">
+                <div class="why-we__card"> 
+                    <img src="./images/whywe/3yoqeQbkSg8 1.png" alt="Большой экран" >
+                    <h3 class="why-we__title">Большие экраны</h3>
+                    <p class="why-we__subtitle"> 
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad 
+                        minim veniam.
+                    </p>
+                </div>
 
-        <div class="why-we__top-col"> 
-            <img src="./images/whywe/zvyk.png" alt="Объемный звук" >
-            <h3 class="why-we__title">Объемный звук</h3>
-            <p class="why-we__subtitle"> 
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad 
-                minim veniam.
-            </p>
-        </div>
+                <div class="why-we__card"> 
+                    <img src="./images/whywe/zvyk.png" alt="Объемный звук" >
+                    <h3 class="why-we__title">Объемный звук</h3>
+                    <p class="why-we__subtitle"> 
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad 
+                        minim veniam.
+                    </p>
+                </div>
 
-        <div class="why-we__top-col"> 
-            <img src="./images/whywe/kresla.png" alt="Удобные кресла" >
-            <h3 class="why-we__title">Удобные кресла</h3>
-            <p class="why-we__subtitle">
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad 
-                minim veniam.
-            </p> 
-        </div>
-            
-        <div class="why-we__buttom-col"> 
-            <img src="./images/whywe/atmosfera.png" alt="Уютная атмосфера" >
-            <h3 class="why-we__title">Уютная атмосфера</h3>
-            <p class="why-we__subtitle">
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad 
-                minim veniam.
-            </p> 
-        </div>
-                            
-        <div class="why-we__buttom-col"> 
-            <img src="./images/whywe/pogruzhenie.png" alt="Полное погружение" >
-            <h3 class="why-we__title">Полное погружение</h3>
-            <p class="why-we__subtitle">
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad 
-                minim veniam.
-            </p> 
-        </div>
-                            
-        <div class="why-we__buttom-col"> 
-            <img src="./images/whywe/kiss.png" alt="Поцелуи на заднем ряду" >
-            <h3 class="why-we__title">Поцелуи на заднем ряду</h3>
-            <p class="why-we__subtitle">
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad 
-                minim veniam.
-            </p>
+                <div class="why-we__card"> 
+                    <img src="./images/whywe/kresla.png" alt="Удобные кресла" >
+                    <h3 class="why-we__title">Удобные кресла</h3>
+                    <p class="why-we__subtitle">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad 
+                        minim veniam.
+                    </p> 
+                </div>
+                    
+                <div class="why-we__card"> 
+                    <img src="./images/whywe/atmosfera.png" alt="Уютная атмосфера" >
+                    <h3 class="why-we__title">Уютная атмосфера</h3>
+                    <p class="why-we__subtitle">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad 
+                        minim veniam.
+                    </p> 
+                </div>
+                                    
+                <div class="why-we__card"> 
+                    <img src="./images/whywe/pogruzhenie.png" alt="Полное погружение" >
+                    <h3 class="why-we__title">Полное погружение</h3>
+                    <p class="why-we__subtitle">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad 
+                        minim veniam.
+                    </p> 
+                </div>
+                                    
+                <div class="why-we__card"> 
+                    <img src="./images/whywe/kiss.png" alt="Поцелуи на заднем ряду" >
+                    <h3 class="why-we__title">Поцелуи на заднем ряду</h3>
+                    <p class="why-we__subtitle">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad 
+                        minim veniam.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -181,6 +194,14 @@
                         <th class="table__cell">Жанр</th>
                     </tr>
                 </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="table__footer">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>
+                        magna aliqua. Ut enim ad minim veniam.
+                        </td>
+                    </tr> 
+                </tfoot>
                 <tbody>
                     <tr class="table__row table__row_dark">
                         <td class="table__check"><img src="./images/tablica/galochkawh.svg" alt="галочка"></td>
@@ -201,19 +222,13 @@
                         <td class="table__cell">Мультфильм, фэнтэзи, комедия</td>
                     </tr>
                     <tr class="table__row">
-                        <td class="table__check"><img src="./images/tablica/galochkawh.svg" alt="галочка"></td>
+                        <td class="table__check table__bottom__radius-left"><img src="./images/tablica/galochkawh.svg" alt="галочка"></td>
                         <td class="table__cell">16:00</td>
                         <td class="table__cell"><a href="https://www.kinopoisk.ru/film/693730/" target="_block" class="table__references">Люди в чёрном: Интэрнэшнл</a></td>
-                        <td class="table__cell">Фантастика, боевик, комедия</td>
+                        <td class="table__cell table__bottom__radius-right">Фантастика, боевик, комедия</td>
                     </tr>
                 </tbody>
             </table>
-            <tfoot>
-                <div class="table__footer">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </br>
-                    magna aliqua. Ut enim ad minim veniam.
-                </div> 
-            </tfoot>
         </div>
     </section>
     
@@ -264,24 +279,28 @@
         <img src="./images/mozaika/dfsdf.png" alt="Постер фильма">
     </section> <!-- не забыть о мозайке фильмов -->
 
-    <section > <!-- товары для покупки -->
-        <h2 class="section__headers">Товары</h2>
-        <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
-        </div>
-        <div>
-            <img src="./images/tovary/cola.png" alt="Сoca-Cola">
-            <h4>Сoca-Cola</h4>
-        </div>
-        <div>
-            <img src="./images/tovary/brelok.png" alt="Брелок 'Железный человек'">
-            <h4>Брелок "Железный человек"</h4>
-        </div>
-        <div>
-            <img src="./images/tovary/poster.png" alt="Постер 'Мстители'">
-            <h4>Постер 'Мстители'</h4>
-        </div> <!-- товары для покупки конец -->
+    <section> <!-- товары для покупки -->
+        <div class="container">
+            <h2 class="section__headers">Товары</h2>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
+            </div>
+            <div class="gift__cards">
+                <div class="gift__card">
+                    <img src="./images/tovary/cola.png" alt="Сoca-Cola">
+                    <h4>Сoca-Cola</h4>
+                </div>
+                <div class="gift__card">
+                    <img src="./images/tovary/brelok.png" alt="Брелок 'Железный человек'">
+                    <h4>Брелок "Железный человек"</h4>
+                </div>
+                <div class="gift__card">
+                    <img src="./images/tovary/poster.png" alt="Постер 'Мстители'">
+                    <h4>Постер 'Мстители'</h4>
+                </div> <!-- товары для покупки конец -->
+            </div>    
+        </div>    
     </section>
 
 
@@ -290,8 +309,8 @@
         <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
             magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
-        </div>
-            <div> <!-- отзыв 1 -->
+        </div class="container">
+            <div class="reviews__col"> <!-- отзыв 1 -->
                 <img src="./images/reviews/lena.png" alt="Фото Елены">
                 <h4>Елена Еленова</h4>
                 <div>
@@ -305,7 +324,7 @@
                 </div>
             </div> <!-- отзыв 1 конец -->
 
-            <div> <!-- отзыв 2 -->
+            <div class="reviews__col"> <!-- отзыв 2 -->
                 <img src="./images/reviews/boris.png" alt="Фото Бориса">
                 <h4>Борис Борисов</h4>
                 <div>
@@ -318,7 +337,7 @@
                     </span> 
                 </div>
             </div> <!-- отзыв 2 конец -->        
-            <div> <!-- отзыв 3 -->
+            <div class="reviews__col"> <!-- отзыв 3 -->
                 <img src="./images/reviews/leo.png" alt="Фото Леонардо">
                 <h4>Леонардо ДиКаприо</h4>
                 <div>
@@ -371,7 +390,10 @@
         <img src="./images/map.jpg" alt="Местоположение на карте">
     </div>
     <footer>
-        <p><!--Информация о кинотеатре 1 столбик-->
+    <svg class="main__logo">
+        <use xlink: href="#logo"></use>
+    </svg>>
+        <p class="footer__text"><!--Информация о кинотеатре 1 столбик-->
             Lorem ipsum dolor sit amet, consectetur
             adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna 

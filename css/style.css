@@ -1,34 +1,8 @@
-@font-face {
-    font-family: 'IBM-Plex-Sans';
-    src: url('../fonts/IBMPlexSans-Light.ttf');
-    font-style: normal;
-    font-weight: 300;
-}
 
-@font-face {
-    font-family: 'IBM-Plex-Sans';
-    src: url('../fonts/IBMPlexSans-Regular.ttf');
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'IBM-Plex-Sans';
-    src: url('../fonts/IBMPlexSans-Medium.ttf');
-    font-style: normal;
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'IBM-Plex-Sans';
-    src: url('../fonts/IBMPlexSans-SemiBold.ttf');
-    font-style: normal;
-    font-weight: 600;
-}
 /* Основные свойства стилей*/
 body {
     background-size: 100%;
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 li {
     list-style-type: none;
@@ -45,6 +19,20 @@ li {
     background-image: url(../images/main/Backgroound-Picture.jpg);
     background-size: cover;
 }
+.main__logo {
+    height: 40px; 
+    width: 156px;
+    margin: 40px 90px 44px 90px;
+    float: left;
+}
+/*.header__topline {} */
+    
+.header__nav {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
 /* Почему мы? */
 
 .why-we__title {
@@ -60,21 +48,19 @@ li {
     text-align: center;
     padding-bottom: 29px;
 }
-.why-we__top-col {
-    float: left;
-    box-sizing: border-box;
-    width: 33.33%;
-    padding: 0 55px;
+
+.why-we__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28.9%;
 }
 
-.why-we__buttom-col {
-    float: left;
-    box-sizing: border-box;
-    width: 33.33%;
-    padding: 0 55px;
-    padding-bottom: 144px;
+.why-we__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
 /* Cтили таблицы */
 .container {
     max-width: 1124px;
@@ -89,10 +75,10 @@ li {
     overflow: hidden;
 }
 .table__check {
-    padding: 18px 18px 18px 28px;
+    padding: 13.5px 18px 13.5px 28px;
 }
 .table__top-row {
-    height: 45px;
+    
     font-family: 'IBM-Plex-Sans';
     font-size: 20px;
     font-weight: 600;
@@ -100,20 +86,32 @@ li {
     color:white;
     background-color: #A3CC40;
 }
+.table__footer {
+    font-size: 11px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    padding: 30px 0px 25px 0px;
+}
 .table__row {
-    height: 45px;
+    
     color:white;
     background-color: #4C4D4F;
     font-size: 14px;
     font-weight: 400;
-    padding: 14px;
 }
 .table__row_dark {
-    color:white;
     background-color: #373737;
 }
+
+.table__bottom__radius-left {
+    border-bottom-left-radius:10px;
+}
+.table__bottom__radius-right {
+    border-bottom-right-radius: 10px;
+}
 .table__cell {
-    padding: 0px 0px 0px 10px;
+    padding:  10px;
 }
 .table__references {
     font-size: 14px;
@@ -121,26 +119,61 @@ li {
     color:white;
     text-decoration: none;
 }
-.table__footer {
-    font-size: 11px;
-    font-weight: 400;
-    color: #333333;
-    text-align: center;
-    margin-top: 30px;
-}
+
 /* Подарок каждому */
 #gift {
     height: 685px;
-    background-image: url(../images/podarok/backgroung-podarok.jpg);
+    background-image: url(../images/podarok/backgroung-podarok.jpg)  no-repeat;
     background-size: cover;
+    margin: 0px 0px 0px -8px;
 }
+
+.gift__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28.9%;
+}
+
+.gift__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .gift__col {
+    float: left;
+    box-sizing: border-box;
+    width: 33.33%;
+    padding: 0 55px;
+    padding-bottom: 144px;
+} */
+
 /* Отзывы */
 #reviews {
     height: 792px;
-    background-image: url(../images/reviews/fon.png);
-    background-size: cover;
+    background-image: url(../images/reviews/fon.png) no-repeat;
+    background-size: 100%;
+    margin: 0px 0px 0px -8px;
+    display: inline-block;
 }
+.reviews__col{
+    float: left;
+    box-sizing: border-box;
+    width: 33.33%;
+    padding: 0 55px;
+    padding-bottom: 144px;
+}
+/* Местоположение на карте*/
+
 /* Подвал сайта*/
 footer{
     background-color: #A3CC40;
+}
+.footer__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    float: left;
+    max-width: 269px;
 }
