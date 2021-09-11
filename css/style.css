@@ -7,6 +7,13 @@ body {
 li {
     list-style-type: none;
 }
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 .section__headers {
     font-size: 48px;
     font-weight: 500;
@@ -15,38 +22,100 @@ li {
 
 /* Главная страница */
 #main { 
-    height:728px ;
+    padding: 44px 0px 148px 0px;
     background-image: url(../images/main/Backgroound-Picture.jpg);
     background-size: cover;
 }
-.main__logo {
-    height: 40px; 
-    width: 156px;
-    margin: 40px 90px 44px 90px;
+
+#logo {
     float: left;
+    padding: 6px 44px 6px 0px;
 }
-/*.header__topline {} */
+
+.header__topline {
+    display: flex;
+    align-items: center;
+} 
+.header__topline_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__bottomline_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
     
 .header__nav {
     font-size: 12px;
     font-weight: 500;
     color: white;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
+.main__title {
+    font-weight: 100;
+    font-size: 68px;
+    color: #FFFFFF;
+    padding-bottom: 19px;
+    margin-top: 155px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+.main__subtitle {
+    font-weight: normal;
+    font-size: 41px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 141px;
+}
+.main__footnote {
+    background-color: #fff;
+    align-items: center;
+    border-radius: 10px;
+    float: right;
+    padding: 30px 47px;
+    max-width: 426px;
+    box-sizing: border-box;
+    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+}
+
+.main__footnote_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    
+}
+
+.main__footnote_text {
+    font-weight: normal;
+    font-size: 11px;
+}
+
 /* Почему мы? */
 
+#why-we {
+    margin-top: 30px;
+}
+
+.why-we__heading {
+    margin: 8px 0px 94px 0px;
+}
 .why-we__title {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 39px;
     margin-bottom: 25px;
 }
 .why-we__subtitle {
     font-size: 11px;
     font-weight: 400;
     text-align: center;
-    padding-bottom: 29px;
+    margin-top: 10px;
+    margin-bottom: 65px;
 }
 
 .why-we__card {
@@ -68,6 +137,15 @@ li {
     box-sizing: border-box;
     margin: 0 auto;
 }
+.container_header {
+    padding: 0 89px;
+}
+
+.table__title {
+    margin-top: 110px;
+    margin-bottom: 96px;    
+}
+
 .table {
     width: 100%; 
     border-collapse: collapse;
@@ -75,7 +153,7 @@ li {
     overflow: hidden;
 }
 .table__check {
-    padding: 13.5px 18px 13.5px 28px;
+    padding: 17.5px 18px 13.5px 24px;
 }
 .table__top-row {
     
@@ -91,7 +169,7 @@ li {
     font-weight: 400;
     color: #333333;
     text-align: center;
-    padding: 30px 0px 25px 0px;
+    padding: 33px 0px 125px 0px;
 }
 .table__row {
     
@@ -122,48 +200,213 @@ li {
 
 /* Подарок каждому */
 #gift {
-    height: 685px;
-    background-image: url(../images/podarok/backgroung-podarok.jpg)  no-repeat;
+    max-width: 1124px;
+    background-image: url(../images/podarok/backgroung-podarok.jpg);
     background-size: cover;
-    margin: 0px 0px 0px -8px;
+    padding: 67px 113px 70px 163px;
 }
 
-.gift__card {
+
+.container_gift {
+    padding: 66px 0px 0px 306px;
+}
+
+.gift__img {
+    border-radius: 50%;
+    max-width: 278px; 
+    margin-top: -126px;
+    float: left;
+}
+
+.gift__content {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: fit-content;
+}
+
+.gift__title {
+    color: #fff;
+    margin: 45px 0px 59px 138px;
+}
+
+.gift__text {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    max-width: 548px;
+    line-height: 14,3px;
+    text-align: right;
+    margin-left: 24px;
+}
+
+.gift__margin_toptext {
+    margin: -10px 0px 21px 24px;
+}
+
+.gift__margin_text {
+    margin: 0px 0px 23px 24px;
+}
+
+.gift__button {
+    float: right;
+    margin: 37px -2px 0px 0px;
+    width: 190px;
+    height: 31px;
+    border: none;
+    background-color: #A3CC40;
+    border-radius: 6px;
+    color: #fff;
+}
+
+
+#films {
+    max-width: 1124px;
+    padding: 70px 114px 0px 160px;
+}
+
+.container_films {
+    padding-top: 69px;
+}
+
+.films__text {
+    font-size: 11px;
+    font-weight: 400;
+    margin: 34px 0px 68px 0px;
+    line-height: 14,3px;
+}
+
+.films__img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.films__img_mosaic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.films__img_size {
+    width: 283px;
+    height: 283px;
+}
+
+.container_mosaics {
+    position: absolute;
+    width: 100%;    
+}
+
+.container_mosaics_block {
+    position: absolute;
+    background-color: #90D23D66;
+    text-align: left;
+    max-width: 283px;
+    max-height: 283px;
+}
+
+.container_mosaics_title {
+    position: absolute;
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0px 22px;   
+}
+
+.container_mosaics_text {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14.3px;
+    color: #fff;
+    margin: 65px 23px 133px 23px;
+}
+
+.container__product {
+    padding: 89px 162px;
+}
+
+.product__text {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14,3px;
+    margin: 38px 253px 60px 0px;
+}
+
+.product__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 28.9%;
 }
 
-.gift__cards {
+.product__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/* .gift__col {
-    float: left;
-    box-sizing: border-box;
-    width: 33.33%;
-    padding: 0 55px;
-    padding-bottom: 144px;
-} */
-
 /* Отзывы */
 #reviews {
-    height: 792px;
-    background-image: url(../images/reviews/fon.png) no-repeat;
-    background-size: 100%;
-    margin: 0px 0px 0px -8px;
-    display: inline-block;
+    max-width: 1124px;
+    background-image: url(../images/reviews/fon.jpg);
+    background-size: cover;
+    margin-top: 48px;
+    padding-bottom: 10px;
 }
-.reviews__col{
-    float: left;
-    box-sizing: border-box;
-    width: 33.33%;
-    padding: 0 55px;
-    padding-bottom: 144px;
+
+.reviews__title{
+    padding-top: 126px;
 }
+
+.reviews_text {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14,3px;
+    margin: 39px 0px 75px 0px;
+    max-width: 548px;   
+}
+
+.reviews__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reviews__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28.9%;
+    max-width: 210px;
+    background-color: #97B13C;
+    border-radius: 9px;
+    color: #FFFFFF;
+}
+
+.reviews__cards_center {
+    max-width: 246px;
+}
+
+.reviews__cards_title {
+    font-size: 15px;    
+    font-weight: 600;
+    padding:9px 17px 9px 13px;
+}
+
+.reviews__cards_text {
+    font-size: 10px;
+    font-weight: 400;
+    padding: 9px 13px;
+}
+
+.reviews__cards_data {
+    float: right;
+    font-size: 8px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+
+
 /* Местоположение на карте*/
 
 /* Подвал сайта*/
