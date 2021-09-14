@@ -1,8 +1,13 @@
 
 /* Основные свойства стилей*/
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-size: 100%;
     font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
 }
 li {
     list-style-type: none;
@@ -13,6 +18,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
 
 .section__headers {
     font-size: 48px;
@@ -20,32 +30,81 @@ a {
     color: #A3CC40;
 }
 
+.container {
+    max-width: 1124px;
+    padding: 0 138px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container_header {
+    padding: 44px 89px 0px 89px;
+}
+
 /* Главная страница */
-#main { 
-    padding: 44px 0px 148px 0px;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main {
     background-image: url(../images/main/Backgroound-Picture.jpg);
     background-size: cover;
 }
 
+.main::after {
+    content: '';
+    display: block;
+    width: 1124px;
+    border: 100vw solid transparent;
+    border-bottom: 150px solid  #fff;
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+}
+
 #logo {
-    float: left;
     padding: 6px 44px 6px 0px;
+}
+
+.header__navigation {
+    flex-grow: 1;
 }
 
 .header__topline {
     display: flex;
-    align-items: center;
+    align-items: flex-start;    
+    margin-bottom: 7px;
 } 
 .header__topline_nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-right: 63px;
+}
+
+.header__button {
+    border: none; 
+    background: #fff; 
+    border-radius: 6px; 
+    font-size: 12px; 
+    min-width: 130px; 
+    text-align: left;
+    vertical-align: middle;
+}
+
+.header__button_icon {
+    padding: 6px 8px 5px 9px;
+    max-width: 10px;
 }
 
 .header__bottomline_nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-right: 63px;
 }
     
 .header__nav {
@@ -60,7 +119,7 @@ a {
     font-size: 68px;
     color: #FFFFFF;
     padding-bottom: 19px;
-    margin-top: 155px;
+    margin-top: 135px;
     margin-bottom: 17px;
     text-align: center;
 }
@@ -75,7 +134,7 @@ a {
     background-color: #fff;
     align-items: center;
     border-radius: 10px;
-    float: right;
+    margin-left: auto;
     padding: 30px 47px;
     max-width: 426px;
     box-sizing: border-box;
@@ -97,7 +156,7 @@ a {
 /* Почему мы? */
 
 #why-we {
-    margin-top: 30px;
+    margin-top: -51px;
 }
 
 .why-we__heading {
@@ -131,15 +190,6 @@ a {
     justify-content: space-between;
 }
 /* Cтили таблицы */
-.container {
-    max-width: 1124px;
-    padding: 0 138px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-.container_header {
-    padding: 0 89px;
-}
 
 .table__title {
     margin-top: 110px;
@@ -200,10 +250,9 @@ a {
 
 /* Подарок каждому */
 #gift {
-    max-width: 1124px;
     background-image: url(../images/podarok/backgroung-podarok.jpg);
     background-size: cover;
-    padding: 67px 113px 70px 163px;
+    padding: 67px 0px 70px 0px;
 }
 
 
@@ -260,8 +309,7 @@ a {
 
 
 #films {
-    max-width: 1124px;
-    padding: 70px 114px 0px 160px;
+    padding-top: 70px;
 }
 
 .container_films {
@@ -284,32 +332,42 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.films__img-mosaic:hover .container_mosaics_block{
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .films__img_size {
-    width: 283px;
-    height: 283px;
+    width: 282px;
+    height: 282px;
 }
 
-.container_mosaics {
+.container-mosaics {
     position: absolute;
-    width: 100%;    
+    width: 282px;    
 }
 
 .container_mosaics_block {
     position: absolute;
     background-color: #90D23D66;
     text-align: left;
-    max-width: 283px;
-    max-height: 283px;
+    width: 282px;
+    height: 282px;
+    padding: 17px 22px;
+    box-sizing: border-box; 
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .container_mosaics_title {
-    position: absolute;
     font-size: 29px;
     font-weight: 600;
     color: #fff;
-    margin: 0px 22px;   
+    margin-bottom: 13px; 
+    display: block;  
 }
 
 .container_mosaics_text {
@@ -317,7 +375,6 @@ a {
     font-weight: 400;
     line-height: 14.3px;
     color: #fff;
-    margin: 65px 23px 133px 23px;
 }
 
 .container__product {
@@ -346,8 +403,7 @@ a {
 
 /* Отзывы */
 #reviews {
-    max-width: 1124px;
-    background-image: url(../images/reviews/fon.jpg);
+    background-image: url(../images/reviews/fon.jpg)    ;
     background-size: cover;
     margin-top: 48px;
     padding-bottom: 10px;
@@ -369,54 +425,194 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .reviews__cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 28.9%;
-    max-width: 210px;
+    max-width: 246px;
     background-color: #97B13C;
     border-radius: 9px;
     color: #FFFFFF;
-}
-
-.reviews__cards_center {
-    max-width: 246px;
+    margin-bottom: 186px;
 }
 
 .reviews__cards_title {
     font-size: 15px;    
     font-weight: 600;
-    padding:9px 17px 9px 13px;
+    padding: 17px 8px 18px 17px;
 }
 
 .reviews__cards_text {
     font-size: 10px;
     font-weight: 400;
-    padding: 9px 13px;
+    padding: 0px 9px 30px 17px
 }
 
 .reviews__cards_data {
-    float: right;
     font-size: 8px;
     font-weight: 300;
-    padding: 10px;
+    text-align: right;
+    padding: 0px 14px 9px 0px;
+}
+
+.reviews__cards-lateral {
+    max-width: 210px;
+    max-height: 284px;
+}
+
+/* Обратная связь*/
+
+.container__feedback {
+    padding: 0px 174px 0px 183px;
+}
+
+.feedback {
+    max-width: 767px;
+    margin: 43px 0px 61px 0px;
+    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
+    border-radius: 20px;
+    background-image: url(../images/feedback/fon.jpg);
+}
+
+.feedback__form {
+    margin-left: 381px;
+}
+
+.feedback_title {
+    font-size: 25px;
+    font-weight: 500;
+    color: #A3CC40;
+    padding: 20px 0px 20px 70px;
+    text-align: left;
+}
+
+.feedback__entry-field {
+    width: 344px;
+    height: 35px;
+    background-color: #DEDEDE;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #A1A1A1;
+    font-size: 15px;
+    padding-left: 15px;
+    border: none;
+}
+
+.feedback__select {
+    width: 361px;
+}
+
+.feedback__field-for-feedback {
+    height: 120px;
+    max-height: 120px;
+    margin-bottom: 15px;
+}
+
+.feedback__field-for_mail {
+    margin-bottom: 10px;
+}
+
+.feedback__file {
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    color: #A1A1A1;
+    margin-bottom: 10px;
+}
+
+.feedback__pers-data {
+    font-size: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feedback__button {
+    width: 361px;
+    height: 40px;
+    background-color: #A3CC40;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 20px; 
+    border: none; 
 }
 
 
 
 /* Местоположение на карте*/
 
+.container__map {
+    padding: 0px 75px 0px 75px;
+}
+
 /* Подвал сайта*/
 footer{
     background-color: #A3CC40;
+    position: relative;
+    top: -22px;
+    color: #FFFFFF;
+
 }
+.container_footer {
+    padding: 0px 209px 0px 79px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 80px;
+}
+
+
 .footer__text {
     font-size: 14px;
     font-weight: 400;
     color: #fff;
-    float: left;
     max-width: 269px;
+    margin: 14px 0px 26px 0px;
+}
+
+.footer_icon {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 31px;
+    background-color: #BEE956;
+    border-radius: 50%;
+    margin-right: 31px;
+}
+
+.footer__title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.footer__nav {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.footer_bottom-text {
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 30px;
 }
