@@ -2,6 +2,8 @@
 /* Основные свойства стилей*/
 html {
     overflow-x: hidden;
+    font-size: 1.42vw;
+    
 }
 
 body {
@@ -24,21 +26,22 @@ a:hover {
 }
 
 
-.section__headers {
-    font-size: 48px;
+
+.section_headers {
+    font-size: 3rem;
     font-weight: 500;
     color: #A3CC40;
 }
 
 .container {
-    max-width: 1124px;
-    padding: 0 138px;
+    max-width: 70.25rem;
+    padding: 0 8.625rem;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
 .container_header {
-    padding: 44px 89px 0px 89px;
+    padding: 2.75rem 5.5625rem 0px 5.5625rem;
 }
 
 /* Главная страница */
@@ -52,490 +55,615 @@ a:hover {
 .main {
     background-image: url(../images/main/Backgroound-Picture.jpg);
     background-size: cover;
+    height: 100vh;
 }
 
+/*
 .main::after {
     content: '';
     display: block;
-    width: 1124px;
+    max-width: 70.25rem;
     border: 100vw solid transparent;
-    border-bottom: 150px solid  #fff;
+    border-bottom: 9.375rem solid  #fff;
     position: absolute;
     bottom: 0;
     pointer-events: none;
 }
+*/
 
 #logo {
-    padding: 6px 44px 6px 0px;
+    max-width: 9.75rem;
+    padding: 0.375rem 2.75rem 0.375rem 0;
 }
 
-.header__navigation {
+.header_navigation {
     flex-grow: 1;
 }
 
-.header__topline {
+.header_topline {
     display: flex;
     align-items: flex-start;    
-    margin-bottom: 7px;
+    margin-bottom: 0,4375rem;
 } 
-.header__topline_nav{
+.header_topline-nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-right: 63px;
+    padding-right: 3.9375rem;
 }
 
-.header__button {
+.header_button {
     border: none; 
     background: #fff; 
-    border-radius: 6px; 
-    font-size: 12px; 
-    min-width: 130px; 
+    border-radius: 0.375rem; 
+    font-size: 0.75rem; 
+    min-width: 8.125rem; 
     text-align: left;
     vertical-align: middle;
 }
 
-.header__button_icon {
-    padding: 6px 8px 5px 9px;
-    max-width: 10px;
+.header_button-icon {
+    padding: 0.375rem 0.5rem 0.3125rem 0.5625rem;
+    max-width: 0.625rem;
 }
 
-.header__bottomline_nav{
+.header_bottomline-nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-right: 63px;
+    padding-right: 3.9375rem;
 }
     
 .header__nav {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
     color: white;
     display: flex;
     align-items: center;
 }
-.main__title {
+.main_title {
     font-weight: 100;
-    font-size: 68px;
+    font-size: 4.25rem;
     color: #FFFFFF;
-    padding-bottom: 19px;
-    margin-top: 135px;
-    margin-bottom: 17px;
+    padding-bottom: 1.1875rem;
+    margin-top: 8.4375rem;
+    margin-bottom: 1.0625rem;
     text-align: center;
 }
-.main__subtitle {
+.main_subtitle {
     font-weight: normal;
-    font-size: 41px;
+    font-size: 2.5625rem;
     text-align: center;
     color: #fff;
-    padding-bottom: 141px;
+    padding-bottom: 8.8125rem;
 }
-.main__footnote {
+.main_footnote {
     background-color: #fff;
     align-items: center;
-    border-radius: 10px;
-    margin-left: auto;
-    padding: 30px 47px;
-    max-width: 426px;
+    border-radius: 0.625rem;
+    margin-left: 30rem;
+    padding: 0  2.9375rem;
+    width: 26.625rem;
     box-sizing: border-box;
-    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+    box-shadow: 0rem 1.6875rem 2.4375rem rgba(163, 204, 64, 0.18);
+    position: relative;
+    z-index: 2;
 }
 
-.main__footnote_title {
-    font-style: normal;
+.main_footnote-title {
+    font-size: 1.875rem;
     font-weight: 600;
-    font-size: 30px;
-    
+    text-align: center;
+    padding: 1.875rem 0 1.375rem 0;
+    display: block;
 }
 
-.main__footnote_text {
-    font-weight: normal;
-    font-size: 11px;
+.main_footnote-text {
+    font-weight: 400;
+    font-size: 0.6875rem;
+    line-height: 0.89375rem;
+    padding-bottom: 1.875rem;
 }
+
+input
+{
+  display: none;
+}
+
+#text {
+    position: absolute;
+    display: block;
+    top: 0;
+    padding-left: 10px;
+}
+
+.select {
+    padding-top: 7px;
+    display: inline-block;
+    width: 53px;
+    position: relative;
+}
+
+.select:before {
+    content: url(../images/main/select.png);
+    display: inline-block;
+    color: white;
+    position: absolute;
+    right: -8px;
+    top: 2px;
+    z-index: 2;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.select input[name="list"]:not(:checked) ~ #text {
+    color: white;
+}
+
+.select input[name="list"]:checked ~ #text {
+    background: transparent;
+    color: transparent;
+    z-index: 2;
+}
+
+#select:disabled ~ .items #text {
+    background: #eee;
+}
+
+.items {
+    display: block;
+    min-height: 30px;
+    position: absolute;
+    overflow: hidden;
+    width: 32px;
+    cursor: pointer;
+}
+
+#select:not(:checked) ~ .items {
+    height: 30px;
+}
+
+.items label {
+    display: none;
+    padding-left: 10px;
+    color: white;
+}
+
+.items label:hover {
+    cursor: pointer;
+}
+
+#select:checked ~ .items {
+    padding-top: 30px;
+}
+
+#select:checked ~ .items label {
+    display: block;
+}
+
+.items input:checked + label {
+    display: block!important;
+    border: none;
+    background: white;
+}
+
+#select:checked ~ .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background: rgba(0,0,0,0.4);
+}
+
 
 /* Почему мы? */
 
+
+/*
 #why-we {
     margin-top: -51px;
 }
+Нужен-ли тут отрицательный маржин?
+*/
 
-.why-we__heading {
-    margin: 8px 0px 94px 0px;
+.why-we_heading {
+    margin: 0.6875rem 0 5.875rem;
 }
-.why-we__title {
-    font-size: 20px;
+.why-we_title {
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
-    margin-top: 39px;
-    margin-bottom: 25px;
+    margin-top: 2.4375rem;
+    margin-bottom: 1.5625rem;
 }
-.why-we__subtitle {
-    font-size: 11px;
+.why-we_subtitle {
+    font-size: 0.6875rem;
     font-weight: 400;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 65px;
+    margin-top: 0.625rem;
+    margin-bottom: 4.0625rem;
 }
 
-.why-we__card {
+.why-we_card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 28.9%;
+    max-width: 28.9%;
 }
 
-.why-we__cards {
+.why-we_cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.why-we_img-size {
+    max-width: 15.3125rem;
+}
 /* Cтили таблицы */
 
-.table__title {
-    margin-top: 110px;
-    margin-bottom: 96px;    
+.table_title {
+    margin-top: 6.875rem;
+    margin-bottom: 6rem;    
 }
 
 .table {
     width: 100%; 
     border-collapse: collapse;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     overflow: hidden;
 }
-.table__check {
-    padding: 17.5px 18px 13.5px 24px;
+.table_check {
+    padding: 1.09375rem 1.125rem 0.84375rem 1.5rem;
 }
-.table__top-row {
+.table_top-row {
     
     font-family: 'IBM-Plex-Sans';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: left;
     color:white;
     background-color: #A3CC40;
 }
-.table__footer {
-    font-size: 11px;
+.table_footer {
+    font-size: 0.6875rem;
     font-weight: 400;
     color: #333333;
     text-align: center;
-    padding: 33px 0px 125px 0px;
+    padding: 2.0625rem 0 7.8125rem 0;
 }
-.table__row {
+.table_row {
     
     color:white;
     background-color: #4C4D4F;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
 }
-.table__row_dark {
+.table_row_dark {
     background-color: #373737;
 }
 
-.table__bottom__radius-left {
-    border-bottom-left-radius:10px;
+.table_bottom__radius-left {
+    border-bottom-left-radius: 0.625rem;
 }
-.table__bottom__radius-right {
-    border-bottom-right-radius: 10px;
+.table_bottom__radius-right {
+    border-bottom-right-radius: 0.625rem;
 }
-.table__cell {
-    padding:  10px;
+.table_cell {
+    padding:  0.625rem;
 }
-.table__references {
-    font-size: 14px;
+.table_references {
+    font-size: 0.875rem;
     font-weight: 400;
     color:white;
     text-decoration: none;
+}
+
+.table_icon-size {
+    max-width: 0.5625rem;
 }
 
 /* Подарок каждому */
 #gift {
     background-image: url(../images/podarok/backgroung-podarok.jpg);
     background-size: cover;
-    padding: 67px 0px 70px 0px;
+    padding: 4.1875rem 0 4.1875rem 0;
 }
 
 
 .container_gift {
-    padding: 66px 0px 0px 306px;
+    padding: 4.125rem 0 0 19.125rem;
 }
 
-.gift__img {
+.gift_img {
     border-radius: 50%;
-    max-width: 278px; 
-    margin-top: -126px;
+    max-width: 17.25rem; 
+    margin-top: -7.875rem;
     float: left;
 }
 
-.gift__content {
+.gift_content {
     display: flex; 
     flex-wrap: wrap; 
     width: fit-content;
 }
 
-.gift__title {
+.gift_title {
     color: #fff;
-    margin: 45px 0px 59px 138px;
+    margin: 2.8125rem 0 3.6875rem 8.625rem;
 }
 
-.gift__text {
+.gift_text {
     color: #fff;
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 400;
-    max-width: 548px;
-    line-height: 14,3px;
+    max-width: 34.25rem;
+    line-height: 0.89375rem;
     text-align: right;
-    margin-left: 24px;
+    margin-left: 1.5rem;
 }
 
-.gift__margin_toptext {
-    margin: -10px 0px 21px 24px;
+.gift_margin-toptext {
+    margin: -0.625rem 0 1.3125rem 1.5rem;
 }
 
-.gift__margin_text {
-    margin: 0px 0px 23px 24px;
+.gift_margin-text {
+    margin: 0 0 1.4375rem 1.5rem;
 }
 
-.gift__button {
+.gift_button {
     float: right;
-    margin: 37px -2px 0px 0px;
-    width: 190px;
-    height: 31px;
+    margin: 2.3125rem 0.125rem 0 0;
+    width: 11.875rem;
+    padding: 0.375rem 0 0.4375rem 0;
     border: none;
     background-color: #A3CC40;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     color: #fff;
 }
 
 
 #films {
-    padding-top: 70px;
+    padding-top: 4.1875rem;
 }
 
 .container_films {
-    padding-top: 69px;
+    padding-top: 4.3125rem;
 }
 
-.films__text {
-    font-size: 11px;
+.films_text {
+    font-size: 0.6875rem;
     font-weight: 400;
-    margin: 34px 0px 68px 0px;
-    line-height: 14,3px;
+    margin: 2.125rem 0 4.25rem 0;
+    line-height: 0.89375rem;
 }
 
-.films__img {
+.films_img {
     display: flex;
     flex-wrap: wrap;
 }
 
-.films__img_mosaic {
+.films_img-mosaic {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
-.films__img-mosaic:hover .container_mosaics_block{
+.films_img-mosaic:hover .container_mosaics-block{
     opacity: 1;
     transition: 0.3s;
 }
 
-.films__img_size {
-    width: 282px;
-    height: 282px;
+.films_img-size {
+    max-width: 17.625rem;
+    max-height: 17.625rem;
 }
 
 .container-mosaics {
     position: absolute;
-    width: 282px;    
+    max-width: 17.625rem;    
 }
 
-.container_mosaics_block {
+.container_mosaics-block {
     position: absolute;
     background-color: #90D23D66;
     text-align: left;
-    width: 282px;
-    height: 282px;
-    padding: 17px 22px;
+    max-width: 17.625rem;
+    height: 17.625rem;
+    padding: 1.0625rem 1.375rem;
     box-sizing: border-box; 
     opacity: 0;
     transition: 0.3s;
 }
 
-.container_mosaics_title {
-    font-size: 29px;
+.container_mosaics-title {
+    font-size: 1.8125rem;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 13px; 
+    margin-bottom: 0.8125rem; 
     display: block;  
 }
 
-.container_mosaics_text {
-    font-size: 11px;
+.container_mosaics-text {
+    font-size: 0.6875rem;
     font-weight: 400;
-    line-height: 14.3px;
+    line-height: 0.89375rem;
     color: #fff;
 }
 
+/*Товары для покупки*/
+
 .container__product {
-    padding: 89px 162px;
+    padding: 5.5625rem 10.125rem;
 }
 
-.product__text {
-    font-size: 11px;
+.product_text {
+    font-size: 0.6875rem;
     font-weight: 400;
-    line-height: 14,3px;
-    margin: 38px 253px 60px 0px;
+    line-height: 0.89375rem;
+    margin: 2.375rem 15.8125rem 3.75rem 0;
 }
 
-.product__card {
+.product_card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 28.9%;
+    max-width: 28.9%;
 }
 
-.product__cards {
+.product_cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.product_img-size {
+    max-width: 15.3125rem;
 }
 
 /* Отзывы */
 #reviews {
     background-image: url(../images/reviews/fon.jpg)    ;
     background-size: cover;
-    margin-top: 48px;
-    padding-bottom: 10px;
+    margin-top: 3rem;
+    padding-bottom: 0.625rem;
 }
 
-.reviews__title{
-    padding-top: 126px;
+.reviews_title{
+    padding-top: 7.875rem;
 }
 
 .reviews_text {
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 400;
-    line-height: 14,3px;
-    margin: 39px 0px 75px 0px;
-    max-width: 548px;   
+    line-height: 0.89375rem;
+    margin: 2.4375rem 0 4.6875rem 0;
+    max-width: 34.25rem;   
 }
 
-.reviews__card {
+.reviews_card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.reviews__cards {
+.reviews_cards {
     display: flex;
     flex-direction: column;
-    max-width: 246px;
+    max-width: 15.375rem;
     background-color: #97B13C;
-    border-radius: 9px;
+    border-radius: 0.5625rem;
     color: #FFFFFF;
-    margin-bottom: 186px;
+    margin-bottom: 11.625rem;
 }
 
-.reviews__cards_title {
-    font-size: 15px;    
+.reviews_cards-title {
+    font-size: 0.9375rem;    
     font-weight: 600;
-    padding: 17px 8px 18px 17px;
+    padding: 1.0625rem 0.6875rem 1.125rem 1.0625rem;
 }
 
-.reviews__cards_text {
-    font-size: 10px;
+.reviews_cards-text {
+    font-size: 0.625rem;
     font-weight: 400;
-    padding: 0px 9px 30px 17px
+    padding: 0px 0.5625rem 1.875rem 1.0625rem
 }
 
-.reviews__cards_data {
-    font-size: 8px;
+.reviews_cards-data {
+    font-size: 0.6875rem;
     font-weight: 300;
     text-align: right;
-    padding: 0px 14px 9px 0px;
+    padding: 0 0.875rem 0.5625rem 0;
 }
 
-.reviews__cards-lateral {
-    max-width: 210px;
-    max-height: 284px;
+.reviews_cards-lateral {
+    max-width: 13.125rem;
+    max-height: 17.75rem;
 }
 
 /* Обратная связь*/
 
-.container__feedback {
-    padding: 0px 174px 0px 183px;
+.container_feedback {
+    padding: 0 10.875rem 0 11.4375rem;
 }
 
 .feedback {
-    max-width: 767px;
-    margin: 43px 0px 61px 0px;
-    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
-    border-radius: 20px;
     background-image: url(../images/feedback/fon.jpg);
+    background-size: cover;
+    max-width: 47.9375rem;
+    margin: 2.6875rem 0 3.8125rem 0;
+    box-shadow: 0.6875rem 0.5625rem 2.4375rem rgba(185, 185, 185, 0.37);
+    border-radius: 1.25rem;
 }
 
-.feedback__form {
-    margin-left: 381px;
+.feedback_form {
+    margin-left: auto;
+    max-width: 344px;
+    padding: 31px 42px;
 }
 
 .feedback_title {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 500;
     color: #A3CC40;
-    padding: 20px 0px 20px 70px;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.feedback__entry-field {
-    width: 344px;
-    height: 35px;
+.feedback_entry-field {
+    width: 100%;
+    max-height: 2.1875rem;
     background-color: #DEDEDE;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    border-radius: 0.3125rem;
+    margin-bottom: 0.9375rem;
     color: #A1A1A1;
-    font-size: 15px;
-    padding-left: 15px;
+    font-size: 0.9375rem;
+    padding-left: 0.9375rem;
     border: none;
 }
 
-.feedback__select {
-    width: 361px;
+.feedback_select {
+    max-width: 22.5625rem;
 }
 
-.feedback__field-for-feedback {
-    height: 120px;
-    max-height: 120px;
-    margin-bottom: 15px;
+.feedback_field-for-feedback {
+    height: 7.5rem;
+    max-height: 7.5rem;
+    margin-bottom: 0.9375rem;
 }
 
-.feedback__field-for_mail {
-    margin-bottom: 10px;
+.feedback_field-for_mail {
+    margin-bottom: 0.625rem;
 }
 
-.feedback__file {
-    border-radius: 5px;
+.feedback_file {
+    border-radius: 0.3125rem;
     border: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #A1A1A1;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
-.feedback__pers-data {
-    font-size: 10px;
+.feedback_pers-data {
+    font-size: 0.625rem;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
-.feedback__button {
-    width: 361px;
-    height: 40px;
+.feedback_button {
+    max-width: 22.5625rem;
+    max-height: 2.5rem;
     background-color: #A3CC40;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     color: #FFFFFF;
-    font-size: 20px;
-    margin-bottom: 20px; 
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem; 
     border: none; 
 }
 
@@ -544,19 +672,23 @@ a:hover {
 /* Местоположение на карте*/
 
 .container__map {
-    padding: 0px 75px 0px 75px;
+    padding: 0 4.6875rem 0 4.6875rem;
+}
+
+.map_img-size {
+    max-width: 60.8125rem;
 }
 
 /* Подвал сайта*/
 footer{
     background-color: #A3CC40;
     position: relative;
-    top: -22px;
+    top: -1.375rem;
     color: #FFFFFF;
 
 }
 .container_footer {
-    padding: 0px 209px 0px 79px;
+    padding: 0px 13.0625rem 0px 4.9375rem;
 }
 
 .footer {
@@ -565,54 +697,58 @@ footer{
     align-items: flex-start;
 }
 
-.footer__column {
+.footer_column {
     display: flex;
     flex-direction:column;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 80px;
+    padding-top: 5em;
 }
 
 
-.footer__text {
-    font-size: 14px;
+.footer_text {
+    font-size: 0.875rem;
     font-weight: 400;
     color: #fff;
-    max-width: 269px;
-    margin: 14px 0px 26px 0px;
+    max-width: 16.8125rem;
+    margin: 0.875rem 0 1.625rem 0;
 }
 
 .footer_icon {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 42px;
+    margin-bottom: 2.625rem;
 }
 
-.footer__icons {
+.footer_icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 31px;
-    height: 31px;
+    max-width: 2rem;
+    max-height: 2rem;
     background-color: #BEE956;
     border-radius: 50%;
-    margin-right: 31px;
+    margin-right: 1.9375rem;
 }
 
-.footer__title {
-    font-size: 20px;
+.footer_icons-size {
+    max-width: 0.84375rem;
+}
+
+.footer_title {
+    font-size: 1.25rem;
     font-weight: 500;
-    margin-bottom: 22px;
+    margin-bottom: 1.375rem;
 }
 
-.footer__nav {
-    font-size: 12px;
+.footer_nav {
+    font-size: 0.75rem;
     font-weight: 500;
     margin-bottom: 12px;
 }
 
 .footer_bottom-text {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 400;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
