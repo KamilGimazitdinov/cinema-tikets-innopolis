@@ -14,6 +14,7 @@
     <!--Шрифты-->
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/media.css" type="text/css">
     <title>Cinema progect</title>
 </head>
     
@@ -45,54 +46,66 @@
                         <path d="M98.9906 24.5247C97.9994 24.5247 96.9814 24.4943 95.9901 24.5247C96.9814 24.5247 97.9726 24.5247 98.9906 24.5247C99.9551 24.5247 100.92 24.5247 101.884 24.5247C100.893 24.5552 99.9551 24.5247 98.9906 24.5247Z" fill="white"/>
                     </svg>     
                     <!--Информация о кинотеатре-->
-                    <!--Информация о кинотеатре сверху верхняя строка-->
-                    <div class="header_navigation">
-                        <ul class="header_topline">
-                            <li class="header_topline-nav">
-                                <a href="tel:+7 800 355 12-56" target="_blank" class="header__nav"> +7 800 355 12 56</a>
-                            </li>
-                            <li class="header_topline-nav">
-                                <a href="mailto:kino@innopolis.ru" target="_blank" class="header__nav">kino@innopolis.ru</a>
-                            </li>
-                            <li class="header_topline-nav">
-                                <span class="header__nav">ул.Спортивная д.1</span>
-                            </li>
-                            <li>                   
-                                <button class="header_button"><img class="header_button-icon" src="./images/main/button-tel.png" alt="Трубка телефона">Заказать звонок</button>
-                            </li>
-                        </ul>
-                        <nav class="header_topline"><!--Информация о кинотеатре сверху нижняя строка-->
-                            <ul class="header__nav">
-                                <li class="header_bottomline-nav">
-                                    <a title="Почему мы?" href="#why-we">Почему мы?</a>
-                                </li>
-                                <li class="header_bottomline-nav">
-                                    <a title="Фильмы" href="#films">Фильмы</a>
-                                </li>
-                                <li class="header_bottomline-nav">
-                                    <a title="Отзывы" href="#reviews">Отзывы</a>
-                                </li>
-                                <li class="header_bottomline-nav">    
-                                    <a title="Подарок каждому" href="#gift">Подарок каждому</a>
-                                </li>
-                                <li class="header_bottomline-nav">
-                                    <a title="Обратная связь" href="#feedback">Обратная связь</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <div class="header__mobile-burger">
 
-                    <label for="select" class="select" style="float: right;">
-                        <input class="input" type="radio" name="list" value="not_changed" id="bg" checked />
-                        <input class="input" type="radio" name="list" value="not_changed" id="select">
-                        <label class="bg" for="bg"></label>
-                        <div class="items">
-                          <input class="input" type="radio" name="list" value="first_value" id="list[0]">
-                          <label for="list[0]">EN</label>
-                          <input class="input" type="radio" name="list" value="second_value" id="list[1]">
-                          <span id="text">RU</span>
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <div class="header__mobile-navigation"> <!--header__mobile-navigation-closed-->
+                            <div class="header_navigation">
+                                <ul class="header_topline"><!--Информация о кинотеатре сверху верхняя строка-->
+                                    <li class="header_topline-nav">
+                                        <a href="tel:+7 800 355 12-56" target="_blank" class="header__nav"> +7 800 355 12 56</a>
+                                    </li>
+                                    <li class="header_topline-nav">
+                                        <a href="mailto:kino@innopolis.ru" target="_blank" class="header__nav">kino@innopolis.ru</a>
+                                    </li>
+                                    <li class="header_topline-nav">
+                                        <span class="header__nav">ул.Спортивная д.1</span>
+                                    </li>
+                                    <li>                   
+                                        <button class="header__button header__button_desktop"><img class="header_button-icon" src="./images/main/button-tel.png" alt="Трубка телефона">Заказать звонок</button>
+                                    </li>
+                                </ul>
+                                <nav class="header_topline"><!--Информация о кинотеатре сверху нижняя строка-->
+                                    <ul class="header__nav">
+                                        <li class="header_bottomline-nav">
+                                            <a title="Почему мы?" href="#why-we">Почему мы?</a>
+                                        </li>
+                                        <li class="header_bottomline-nav">
+                                            <a title="Фильмы" href="#films">Фильмы</a>
+                                        </li>
+                                        <li class="header_bottomline-nav">
+                                            <a title="Отзывы" href="#reviews">Отзывы</a>
+                                        </li>
+                                        <li class="header_bottomline-nav">    
+                                            <a title="Подарок каждому" href="#gift">Подарок каждому</a>
+                                        </li>
+                                        <li class="header_bottomline-nav">
+                                            <a title="Обратная связь" href="#feedback">Обратная связь</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <button class="header__button header__button_mobile"><img class="header_button-icon" src="./images/main/button-tel.png" alt="Трубка телефона">Заказать звонок</button>
+                            </div>
+                        
+                    
+
+                            <label for="select" id="language" class="select" style="float: right;">
+                                <input class="input" type="radio" name="list" value="not_changed" id="bg" checked />
+                                <input class="input" type="radio" name="list" value="not_changed" id="select">
+                                <label class="bg" for="bg"></label>
+                                <div class="s">
+                                    <input class="input" type="radio" name="list" value="first_value" id="list[0]">
+                                    <label for="list[0]">EN</label>
+                                    <input class="input" type="radio" name="list" value="second_value" id="list[1]">
+                                    <span id="text">RU</span>
+                                </div>
+                            </label>
                         </div>
-                    </label>
+                    </div>
                 </div>    
             </div>
         </header> 
@@ -100,7 +113,7 @@
         <div class="container">
             <h1 class="main_title">Закажите билет в кино</h1>
             <h2 class="main_subtitle">Всем покупателям подарок!</h2>
-                <!--
+                
             <div class="main_footnote">
                 <span class="main_footnote-title">
                     Добро пожаловать
@@ -115,7 +128,7 @@
                         Excepteur sint occaecat cupidatat non proident, sunt. 
                     </p>
             </div>
-            Блок "Добро подаловать"-->
+            <!--Блок "Добро подаловать"-->
         </div>        
     </section>
 
@@ -195,40 +208,43 @@
     <section > <!--Таблица сеансов-->
         <div class="container">
             <h2 class="section_headers table_title">Выберите фильм</h2>
-            
-            <div class="container__table">
-                <!--верхняя строка-->
-                <div class="table_top-row"></div>
-                <div class="table_cell table_top-row">Начало сеанса<img src="./images/tablica/treygvverh.svg" class="table_icon-size" alt="треугольник вверх" style="padding: 2px 3.5px 1.8px 4px; margin-left: 6px;"></div>
-                <div class="table_cell table_top-row ">Название фильма<img src="./images/tablica/treygvniz.svg" class="table_icon-size" alt="треугольник вниз" style="padding: 2px 4px 2px 3.5px; margin-left: 12px;"></div>
-                <div class="table_cell table_top-row">Жанр</div>
-                <!--Первая строка--> 
-                <div class="table_check table_row table_row_dark"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
-                <div class="table_cell table_row table_row_dark">10:00</div>
-                <div class="table_cell table_row table_row_dark"><a href="https://www.kinopoisk.ru/film/838/" target="_block" class="table_references">Человек-паук</a></div>
-                <div class="table_cell table_row table_row_dark">Фантастика, боевик, приключения</div>
-                <!--вторая строка-->
-                <div class="table_check table_row"><img src="./images/tablica/galochkagreen.svg" class="table_icon-size" alt="галочка"></div>
-                <div class="table_cell table_row">12:00</div>
-                <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/1122114/" target="_block" class="table_references">Собачья жизнь 2</a></div>
-                <div class="table_cell table_row">Фэнтэзи, драма, комедия</div>
-                <!--третья строка-->
-                <div class="table_check table_row table_row_dark"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
-                <div class="table_cell table_row table_row_dark">14:00</div>
-                <div class="table_cell table_row table_row_dark"><a href="https://www.kinopoisk.ru/film/846824/" target="_block" class="table_references">История игрушек 4</a></div>
-                <div class="table_cell table_row table_row_dark">Мультфильм, фэнтэзи, комедия</div>
-                <!--четвертая строка-->
-                <div class="table_check table_row table_bottom__radius-left"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
-                <div class="table_cell table_row">16:00</div>
-                <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/693730/" target="_block" class="table_references">Люди в чёрном: Интэрнэшнл</a></div>
-                <div class="table_cell table_row table_bottom__radius-right">Фантастика, боевик, комедия</div>
-                <!--подвальная строка-->
-                <div class="table_footer">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>
-                    magna aliqua. Ut enim ad minim veniam.
+            <div class="table__wrapper"> <!-- -->
+                <div class="container__table">
+                    <!--верхняя строка-->
+                    <div class="table_top-row"></div>
+                    <div class="table_cell table_top-row">Начало сеанса<img src="./images/tablica/treygvverh.svg" class="table_icon-size" alt="треугольник вверх" style="padding: 2px 3.5px 1.8px 4px; margin-left: 6px;"></div>
+                    <div class="table_cell table_top-row ">Название фильма<img src="./images/tablica/treygvniz.svg" class="table_icon-size" alt="треугольник вниз" style="padding: 2px 4px 2px 3.5px; margin-left: 12px;"></div>
+                    <div class="table_cell table_top-row">Жанр</div>
+                    <!--Первая строка--> 
+                    <div class="table_check table_row table_row_dark"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
+                    <div class="table_cell table_row table_row_dark">10:00</div>
+                    <div class="table_cell table_row table_row_dark"><a href="https://www.kinopoisk.ru/film/838/" target="_block" class="table_references">Человек-паук</a></div>
+                    <div class="table_cell table_row table_row_dark">Фантастика, боевик, приключения</div>
+                    <!--вторая строка-->
+                    <div class="table_check table_row"><img src="./images/tablica/galochkagreen.svg" class="table_icon-size" alt="галочка"></div>
+                    <div class="table_cell table_row">12:00</div>
+                    <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/1122114/" target="_block" class="table_references">Собачья жизнь 2</a></div>
+                    <div class="table_cell table_row">Фэнтэзи, драма, комедия</div>
+                    <!--третья строка-->
+                    <div class="table_check table_row table_row_dark"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
+                    <div class="table_cell table_row table_row_dark">14:00</div>
+                    <div class="table_cell table_row table_row_dark"><a href="https://www.kinopoisk.ru/film/846824/" target="_block" class="table_references">История игрушек 4</a></div>
+                    <div class="table_cell table_row table_row_dark">Мультфильм, фэнтэзи, комедия</div>
+                    <!--четвертая строка-->
+                    <div class="table_check table_row table_bottom__radius-left"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
+                    <div class="table_cell table_row">16:00</div>
+                    <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/693730/" target="_block" class="table_references">Люди в чёрном: Интэрнэшнл</a></div>
+                    <div class="table_cell table_row table_bottom__radius-right">Фантастика, боевик, комедия</div>
+                    <!--подвальная строка--> 
                 </div>
             </div>
-
+            <div class="table__footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>
+                magna aliqua. Ut enim ad minim veniam.
+            </div>
+            
+                
+            
             <!--
             <table class="table">
                 <thead class="table_top-row">
@@ -462,8 +478,10 @@
                     </div>
                     <img src="./images/mozaika/dfsdf.jpg" class="films_img-size" alt="Постер фильма">
                 </div>
-            </div>    
+            </div>
         </div>
+
+        
     </section>
 
     <section> <!-- товары для покупки -->
