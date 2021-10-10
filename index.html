@@ -53,7 +53,7 @@
                             <span></span>
                         </label>
 
-                        <div class="header__mobile-navigation"> <!--header__mobile-navigation-closed-->
+                        <div class="header__mobile-navigation">
                             <div class="header_navigation">
                                 <ul class="header_topline"><!--Информация о кинотеатре сверху верхняя строка-->
                                     <li class="header_topline-nav">
@@ -88,22 +88,20 @@
                                         </li>
                                     </ul>
                                 </nav>
+                                <label for="select" id="language" class="header_topline-nav header_language select" style="float: right;">
+                                    <input class="input" type="radio" name="list" value="not_changed" id="bg" checked />
+                                    <input class="input" type="radio" name="list" value="not_changed" id="select">
+                                    <label class="bg" for="bg"></label>
+                                    <div class="s">
+                                        <input class="input" type="radio" name="list" value="first_value" id="list[0]">
+                                        <label for="list[0]">EN</label>
+                                        <input class="input" type="radio" name="list" value="second_value" id="list[1]">
+                                        <span id="text">RU</span>
+                                    </div>
+                                </label>
                                 <button class="header__button header__button_mobile"><img class="header_button-icon" src="./images/main/button-tel.png" alt="Трубка телефона">Заказать звонок</button>
-                            </div>
-                        
-                    
-
-                            <label for="select" id="language" class="select" style="float: right;">
-                                <input class="input" type="radio" name="list" value="not_changed" id="bg" checked />
-                                <input class="input" type="radio" name="list" value="not_changed" id="select">
-                                <label class="bg" for="bg"></label>
-                                <div class="s">
-                                    <input class="input" type="radio" name="list" value="first_value" id="list[0]">
-                                    <label for="list[0]">EN</label>
-                                    <input class="input" type="radio" name="list" value="second_value" id="list[1]">
-                                    <span id="text">RU</span>
-                                </div>
-                            </label>
+                            </div>  
+                            
                         </div>
                     </div>
                 </div>    
@@ -121,18 +119,18 @@
                     <p class="main_footnote-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam. </br>
-                    </br>
+                        Ut enim ad minim veniam. 
+                    </p>
+                    <p class="main_footnote-text-buttom">
                         Duis aute irure dolor in reprehenderit 
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                         Excepteur sint occaecat cupidatat non proident, sunt. 
                     </p>
             </div>
-            <!--Блок "Добро подаловать"-->
         </div>        
     </section>
 
-    <section id="why-we">
+    <section id="why-we"> <!--Почему мы-->
         <div class="container">
             <h2 class="section_headers why-we_heading">Почему мы?</h2>
             <div class="why-we_cards">
@@ -205,7 +203,7 @@
         </div>
     </section>
 
-    <section > <!--Таблица сеансов-->
+    <section id="table"> <!--Таблица сеансов-->
         <div class="container">
             <h2 class="section_headers table_title">Выберите фильм</h2>
             <div class="table__wrapper"> <!-- -->
@@ -294,10 +292,10 @@
         </div>
     </section>
        
-    <section id="gift">
+    <section id="gift" class="gift"> <!-- Про подарок -->
         <div class="container">
             <div class="gift_content">
-                <div>
+            <div>
                     <img src="./images/podarok/podarok.png" alt="Подарок" class="gift_img">
                 </div>
                 <div>
@@ -321,13 +319,13 @@
                         </p>
                         <button type="submit" class="gift_button">Получить подарок</button>
                     </div> 
-                </div>        
+                </div>         
             </div>
         </div>
     </section>
 
     <section id="films" > <!-- в этом диве будет мозайка фильмов -->
-        <div class="container container_films">
+        <div class="container">
             <h2 class="section_headers">Фильмы</h2>
             <p class="films_text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</br>
@@ -494,15 +492,27 @@
             <div class="product_cards">
                 <div class="product_card">
                     <img src="./images/tovary/cola.png" class="product_img-size" alt="Сoca-Cola">
-                    <h4>Сoca-Cola</h4>
+                    <div class="card__green">
+                        <div class="product">
+                            Сoca-cola
+                        </div>
+                    </div>
                 </div>
                 <div class="product_card">
                     <img src="./images/tovary/brelok.png" class="product_img-size" alt="Брелок 'Железный человек'">
-                    <h4>Брелок "Железный человек"</h4>
+                    <div class="card__green">
+                        <div class="product product-brelok">
+                            Брелок 'Железный человек'
+                        </div>
+                    </div> 
                 </div>
                 <div class="product_card">
                     <img src="./images/tovary/poster.png" class="product_img-size" alt="Постер 'Мстители'">
-                    <h4>Постер 'Мстители'</h4>
+                    <div class="card__green">
+                        <div class="product product-poster">
+                            Постер 'Мстители'
+                        </div>
+                    </div> 
                 </div> <!-- товары для покупки конец -->
             </div>    
         </div>    
@@ -532,8 +542,8 @@
                 </div> <!-- отзыв 1 конец -->
                 <div class="reviews_cards"> <!-- отзыв 2 -->
                     <img src="./images/reviews/boris.png" alt="Фото Бориса">
-                    <h4 class="reviews_cards-title">Борис Борисов</h4>
-                    <p class="reviews_cards-text">
+                    <h4 class="reviews_cards-title cards-title__center">Борис Борисов</h4>
+                    <p class="reviews_cards-text cards-text__center">
                         Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit, sed do eiusmod 
                         tempor incididunt ut labore et dolore magna 
@@ -568,25 +578,34 @@
                         Обратная связь
                     </div>
                     <form action="order.php" enctype="mulipart/form-data">
-                        <input class="feedback_entry-field" type="text" placeholder="Полное имя" name="name" required>
-                        <select class="feedback_entry-field feedback_select" name="">
-                            <option class="feedback_entry-field" value="">Номер места</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="1">6</option>
-                            <option value="2">7</option> 
-                            <option value="3">8</option>
-                            <option value="4">9</option>
-                            <option value="5">10</option>
-                        </select>
-                        <textarea class="feedback_entry-field feedback_field-for-feedback" name="feedback" placeholder="Напишите свой отзыв"></textarea>
+                        <label class="feedback__label">
+                            <input class="feedback_entry-field active" type="text" name="name" required>
+                            <span class="feedback__label-name">Имя</span>
+                        </label>
+                        <label class="feedback__label">
+                            <select class="feedback_entry-field feedback_select" name="">
+                                <option class="feedback_entry-field" value="">Номер места</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="1">6</option>
+                                <option value="2">7</option> 
+                                <option value="3">8</option>
+                                <option value="4">9</option>
+                                <option value="5">10</option>
+                            </select>
+                        </label>
+                        <label class="feedback__label">
+                            <textarea class="feedback_entry-field feedback_field-for-feedback" name="feedback" placeholder="Напишите свой отзыв"></textarea>
+                        </label>
+                            <!--
                         <input class="feedback_entry-field feedback_field-for_mail" type="email" placeholder="Ваша электронная почта" name="email" required>
                         <input class="feedback_file" type="file" required name="file">
+                        -->
                         <div class="feedback_pers-data">
-                            <input type="checkbox" id="pers-data" required name="pers-data">
+                            <input type="checkbox" id="pers-data" class="input__pers-data" required name="pers-data">
                             <label for="pers-data">Я согласен на обработку своих персональных данных</label>
                         </div>
                             <button class="feedback_button" type="submit">отправить</button>    
@@ -650,52 +669,52 @@
                 </div>
 
                 <!--Информация о кинотеатре 2 столбик-->
-                <div class="footer_column">
+                <div class="footer_column footer_column-margin">
                     <nav>
                         <ul>
                             <li class="footer_title">
-                                <a title="Главная" href="#main">Главная</a>
+                                <a title="Главная" href="#main" class="footer_title">Главная</a>
                             </li>
                             <li class="footer_nav">
-                                <a title="Почему мы?" href="#why-we">Почему мы?</a>
+                                <a title="Почему мы?" href="#why-we" class="footer_nav">Почему мы?</a>
                             </li>
                             <li class="footer_nav">
-                                <a title="Фильмы" href="#films">Фильмы</a>
+                                <a title="Фильмы" href="#films" class="footer_nav">Фильмы</a>
                             </li>
                             <li class="footer_nav">
-                                <a title="Отзывы" href="#reviews">Отзывы</a>
+                                <a title="Отзывы" href="#reviews" class="footer_nav">Отзывы</a>
                             </li>
                             <li class="footer_nav">
-                                <a title="Подарок каждому" href="#gift">Подарок каждому</a>
+                                <a title="Подарок каждому" href="#gift" class="footer_nav">Подарок каждому</a>
                             </li>
                             <li class="footer_nav">
-                                <a title="Обратная связь" href="#">Обратная связь</a>
+                                <a title="Обратная связь" href="#" class="footer_nav">Обратная связь</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
 
                 <!--Информация о кинотеатре 3 столбик-->
-                <div class="footer_column">
+                <div class="footer_column footer_column-margin">
                     <nav>
                         <ul>
                             <li class="footer_title">
-                                <a title="О нас" href="#">О нас</a>
+                                <a title="О нас" href="#" class="footer_title">О нас</a>
                             </li>   
                             <li class="footer_nav">
-                                <a href="tel:+7 (800) 355 12-56">+7 (800) 355 12-56</a>
+                                <a href="tel:+7 (800) 355 12-56" class="footer_nav">+7 (800) 355 12-56</a>
                             </li>
                             <li class="footer_nav">
-                                <a title="Почта" href="mailto:kino@innopolis.ru" target="_blank">kino@innopolis.ru</a>
+                                <a title="Почта" href="mailto:kino@innopolis.ru" target="_blank" class="footer_nav">kino@innopolis.ru</a>
                             </li>
                             <li class="footer_nav">
-                                <a href="#" target="_blank>">420500, г. Иннополис ул.Университетская, д.1</a>
+                                <a href="#" target="_blank" class="footer_nav">420500, г. Иннополис ул.Университетская, д.1</a>
                             </li>
                             <li class="footer_nav">
-                                <a title="Как добраться" href="#" target="_blank">Как добраться</a>
+                                <a title="Как добраться" href="#" target="_blank" class="footer_nav">Как добраться</a>
                             </li>
                             <li class="footer_nav">
-                                <a title="Все контакты" href="#">Все контакты</a>
+                                <a title="Все контакты" href="#" class="footer_nav">Все контакты</a>
                             </li>
                         </ul>
                     </nav>
