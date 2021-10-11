@@ -62,14 +62,15 @@
                                     <li class="header_topline-nav">
                                         <a href="mailto:kino@innopolis.ru" target="_blank" class="header__nav">kino@innopolis.ru</a>
                                     </li>
-                                    <li class="header_topline-nav">
+                                    <li class="header_topline-nav header__mobile-bottom-margin">
                                         <span class="header__nav">ул.Спортивная д.1</span>
                                     </li>
                                     <li>                   
                                         <button class="header__button header__button_desktop"><img class="header_button-icon" src="./images/main/button-tel.png" alt="Трубка телефона">Заказать звонок</button>
                                     </li>
+                                    
                                 </ul>
-                                <nav class="header_topline"><!--Информация о кинотеатре сверху нижняя строка-->
+                                <nav class="header_topline header_bottomline"><!--Информация о кинотеатре сверху нижняя строка-->
                                     <ul class="header__nav">
                                         <li class="header_bottomline-nav">
                                             <a title="Почему мы?" href="#why-we">Почему мы?</a>
@@ -83,25 +84,19 @@
                                         <li class="header_bottomline-nav">    
                                             <a title="Подарок каждому" href="#gift">Подарок каждому</a>
                                         </li>
-                                        <li class="header_bottomline-nav">
+                                        <li class="header_bottomline-nav header__mobile-margin">
                                             <a title="Обратная связь" href="#feedback">Обратная связь</a>
                                         </li>
                                     </ul>
                                 </nav>
-                                <label for="select" id="language" class="header_topline-nav header_language select" style="float: right;">
-                                    <input class="input" type="radio" name="list" value="not_changed" id="bg" checked />
-                                    <input class="input" type="radio" name="list" value="not_changed" id="select">
-                                    <label class="bg" for="bg"></label>
-                                    <div class="s">
-                                        <input class="input" type="radio" name="list" value="first_value" id="list[0]">
-                                        <label for="list[0]">EN</label>
-                                        <input class="input" type="radio" name="list" value="second_value" id="list[1]">
-                                        <span id="text">RU</span>
-                                    </div>
-                                </label>
-                                <button class="header__button header__button_mobile"><img class="header_button-icon" src="./images/main/button-tel.png" alt="Трубка телефона">Заказать звонок</button>
+                                <button class="header__button header__button_mobile"><img class="header_button-icon" src="./images/main/button-greentel.svg" alt="Трубка телефона">Заказать звонок</button>
+                            </div>
+                            <div class="language">
+                                <select name="language" id="select" class="select__language">
+                                    <option value="RU">RU</option>
+                                    <option value="EN">EN</option>
+                                </select>
                             </div>  
-                            
                         </div>
                     </div>
                 </div>    
@@ -295,7 +290,7 @@
     <section id="gift" class="gift"> <!-- Про подарок -->
         <div class="container">
             <div class="gift_content">
-            <div>
+                <div style="z-index: 1;">
                     <img src="./images/podarok/podarok.png" alt="Подарок" class="gift_img">
                 </div>
                 <div>
@@ -311,7 +306,7 @@
                             imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum 
                             morbi blandit cursus risus at ultrices mi tempus. 
                         </p>
-                        <p class="gift_text">
+                        <p class="gift_text gift_margin-bottomtext">
                             Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit 
                             amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium quam vulputate. 
                             Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi cras fermentum odio eu feugiat 
@@ -597,7 +592,7 @@
                                 <option value="5">10</option>
                             </select>
                         </label>
-                        <label class="feedback__label">
+                        <label class="feedback__label feedback__label-margin-bottom">
                             <textarea class="feedback_entry-field feedback_field-for-feedback" name="feedback" placeholder="Напишите свой отзыв"></textarea>
                         </label>
                             <!--
@@ -606,7 +601,7 @@
                         -->
                         <div class="feedback_pers-data">
                             <input type="checkbox" id="pers-data" class="input__pers-data" required name="pers-data">
-                            <label for="pers-data">Я согласен на обработку своих персональных данных</label>
+                            <label for="pers-data" class="input__pers-data-text">Я согласен на обработку своих персональных данных</label>
                         </div>
                             <button class="feedback_button" type="submit">отправить</button>    
                     </form>
