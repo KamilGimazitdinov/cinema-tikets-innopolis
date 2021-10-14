@@ -152,6 +152,11 @@
         padding-bottom: 1.875rem;
     }
     
+    /*
+        margin-top: 1.3rem;
+        padding-right: 0.5rem;
+        margin-right: 0.5rem;
+    */
 
     #menu__toggle {
         opacity: 0;
@@ -227,6 +232,16 @@
         max-width: 25rem;
         text-align: right;
     }
+
+    .container__product {
+        padding: 5.5625rem 3.8rem 0;
+    }
+
+
+    .product_text {
+        margin: 2.2rem 0rem 3.5rem 0;
+    }
+
 
     .feedback {
         background-size: 100% 100%;
@@ -354,4 +369,103 @@
     .why-we_heading {
         margin: 5.2rem 0 5.6rem 0;
     }
+
+    .gift_img {
+        max-width: 13rem;
+        margin-top: 8rem;
+    }
+
+    .gift_title {
+        margin: 5rem 0 2.7rem 0;
+    }
+
+    .gift_text {
+        max-width: 20rem;
+    }
+
+
+    .films_img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container__product {
+        padding: 5.5625rem 2.8rem 0;
+    }
+
+    .product-poster,     .product-brelok {
+        padding: 0;
+    }
+
+    .feedback {
+        background-image: none;
+    }
+
+    .feedback_form {
+        margin: auto;
+        padding: 34px 0 31px 0px;
+    }
+
+    .feedback_button {
+        padding: 1.1rem 8.7rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    html {
+        font-size: 3vw;
+    }
+
+    .main_subtitle {
+        margin-bottom: 2.9rem;
+    }
+
+    .main_footnote {
+        padding: 0 1rem 0 1rem;
+        width: 19.5rem;
+        margin: 0 auto 0 7.6rem;
+    }
+
+   .menu__btn {
+    align-items: center;
+    position: relative;
+    width: 22px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 5;
+    display: block;
+    }
+
+    .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    
+    .gift_img {
+        max-width: 6rem;
+        margin-top: 10rem;
+    }
+
+    .gift_text {
+        max-width: 20rem;
+    }
+
+
+
+    .feedback_form {
+        margin: auto;
+        padding: 34px 15px 31px 15px;
+    }
+
+    .input__pers-data {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .feedback_button {
+        padding: 1.1rem 9.65rem;
+    }
+
 }
