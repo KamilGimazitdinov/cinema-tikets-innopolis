@@ -575,6 +575,7 @@ a:hover {
     max-width: 34.25rem;   
 }
 
+/*
 .reviews_card {
     display: flex;
     flex-wrap: wrap;
@@ -582,10 +583,13 @@ a:hover {
     align-items: center;
     margin-bottom: 8.2rem;
 }
+*/
 
 .reviews_cards {
+    /*
     display: flex;
     flex-direction: column;
+    */
     max-width: 15.375rem;
     background-color: #97B13C;
     border-radius: 0.5625rem;
@@ -624,7 +628,7 @@ a:hover {
 }
 
 .reviews_cards-lateral {
-    max-width: 13.5rem;
+    max-width: 13.2rem;
 }
 
 /* Обратная связь*/
