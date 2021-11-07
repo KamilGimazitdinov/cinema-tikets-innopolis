@@ -242,6 +242,13 @@
         margin: 2.2rem 0rem 3.5rem 0;
     }
 
+    .owl-prev {
+        left: 20%;
+    }
+
+    .owl-next { 
+        right: 20%;
+    }
 
     .feedback {
         background-size: 100% 100%;
@@ -466,6 +473,14 @@
 
     .feedback_button {
         padding: 1.1rem 9.65rem;
+    }
+
+    .owl-prev {
+        left: 15%;
+    }
+
+    .owl-next { 
+        right: 15%;
     }
 
 }

@@ -11,17 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600&display=swap" rel="stylesheet">
-    <!--Шрифты-->
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="./css/media.css" type="text/css">
     
     <!--Cкрипты-->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="./js/owl.carousel.min.js"></script>
     <script defer src="./js/script.js"></script>
+    <script defer src="/js/films-table.js"></script>
     <title>Cinema progect</title>
 </head>
     
@@ -214,22 +215,23 @@
                     <div class="table_cell table_top-row">Начало сеанса<img src="./images/tablica/treygvverh.svg" class="table_icon-size" alt="треугольник вверх" style="padding: 2px 3.5px 1.8px 4px; margin-left: 6px;"></div>
                     <div class="table_cell table_top-row ">Название фильма<img src="./images/tablica/treygvniz.svg" class="table_icon-size" alt="треугольник вниз" style="padding: 2px 4px 2px 3.5px; margin-left: 12px;"></div>
                     <div class="table_cell table_top-row">Жанр</div>
-                    <!--Первая строка--> 
+                    <div id="table-body" class="table-body"></div>
+                    <!--Первая строк
                     <div class="table_check table_row table_row_dark"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
                     <div class="table_cell table_row table_row_dark">10:00</div>
                     <div class="table_cell table_row table_row_dark"><a href="https://www.kinopoisk.ru/film/838/" target="_block" class="table_references">Человек-паук</a></div>
                     <div class="table_cell table_row table_row_dark">Фантастика, боевик, приключения</div>
-                    <!--вторая строка-->
+                    <!--вторая строка
                     <div class="table_check table_row"><img src="./images/tablica/galochkagreen.svg" class="table_icon-size" alt="галочка"></div>
                     <div class="table_cell table_row">12:00</div>
                     <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/1122114/" target="_block" class="table_references">Собачья жизнь 2</a></div>
                     <div class="table_cell table_row">Фэнтэзи, драма, комедия</div>
-                    <!--третья строка-->
+                    <!--третья строка
                     <div class="table_check table_row table_row_dark"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
                     <div class="table_cell table_row table_row_dark">14:00</div>
                     <div class="table_cell table_row table_row_dark"><a href="https://www.kinopoisk.ru/film/846824/" target="_block" class="table_references">История игрушек 4</a></div>
                     <div class="table_cell table_row table_row_dark">Мультфильм, фэнтэзи, комедия</div>
-                    <!--четвертая строка-->
+                    <!--четвертая строка
                     <div class="table_check table_row table_bottom__radius-left"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
                     <div class="table_cell table_row">16:00</div>
                     <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/693730/" target="_block" class="table_references">Люди в чёрном: Интэрнэшнл</a></div>
@@ -289,6 +291,10 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="table__footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>
+                magna aliqua. Ut enim ad minim veniam.
+            </div>
             -->
         </div>
     </section>
@@ -567,7 +573,7 @@
                         13.12.2020
                     </div>    
                 </div>
-                <div class="reviews_cards reviews_cards-lateral">
+                <div class="reviews_cards reviews_cards-lateral"> <!-- отзыв 1 -->
                     <img src="./images/reviews/lena.png" alt="Фото Елены">
                     <h4 class="reviews_cards-title">Елена Еленова</h4>
                     <p class="reviews_cards-text">
@@ -581,8 +587,8 @@
                     </div>    
                 </div>
                 <div class="reviews_cards reviews_cards-lateral">
-                    <img src="./images/reviews/lena.png" alt="Фото Елены">
-                    <h4 class="reviews_cards-title">Елена Еленова</h4>
+                    <img src="./images/reviews/boris.png" alt="Фото Бориса">
+                    <h4 class="reviews_cards-title">Борисов Борис</h4>
                     <p class="reviews_cards-text">
                         Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit, sed do eiusmod 
@@ -593,6 +599,20 @@
                         13.12.2020
                     </div>    
                 </div>
+                <div class="reviews_cards reviews_cards-lateral"> 
+                    <img src="./images/reviews/leo.png" alt="Фото Леонардо">
+                    <h4 class="reviews_cards-title">Леонадро ДиКаприо</h4>
+                    <p class="reviews_cards-text">
+                        Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna 
+                        aliqua. 
+                    </p>
+                    <div class="reviews_cards-data">
+                        13.12.2020
+                    </div>    
+                </div>
+            </div>
     </section> <!--отзывы конец-->
                     
 

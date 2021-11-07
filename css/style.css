@@ -273,12 +273,21 @@ a:hover {
 .container__table {
     display: grid;
     grid-template-columns: 8% 28% 28% 36%;
-    /* grid-template-rows: repeat(4, ); */
-    border-radius: 0.625rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
     color:white;
     overflow: hidden;
     min-width: 850px;
-    
+}
+
+.table-body {
+    display: grid;
+    grid-template-columns: 8% 28% 28% 36%;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    color:white;
+    overflow: hidden;
+    min-width: 850px;
 }
 
 
@@ -575,15 +584,6 @@ a:hover {
     max-width: 34.25rem;   
 }
 
-/*
-.reviews_card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8.2rem;
-}
-*/
 
 .reviews_cards {
     /*
@@ -594,6 +594,7 @@ a:hover {
     background-color: #97B13C;
     border-radius: 0.5625rem;
     color: #FFFFFF;
+    transition: 0.5s;
 }
 
 .reviews_cards-title {
@@ -629,6 +630,37 @@ a:hover {
 
 .reviews_cards-lateral {
     max-width: 13.2rem;
+    margin: 0 auto;
+}
+
+.owl-nav {
+    color: rgba(151, 177, 60, 1);
+    font-size: 5rem;
+}   
+
+.owl-prev {
+    position: absolute;
+    top: 2.69rem;
+    left: 32%;
+
+}
+
+.owl-next {
+    position: absolute;
+    top: 2.69rem;
+    right: 32%;
+
+}
+
+.owl-item.active.center > .reviews_cards {
+    transform: scale(1.1);
+    transition: 0.5s;
+} 
+
+
+
+.owl-stage-outer {
+    padding: 1.88rem 0;
 }
 
 /* Обратная связь*/
