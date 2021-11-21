@@ -23,6 +23,8 @@
     <script defer src="./js/owl.carousel.min.js"></script>
     <script defer src="./js/script.js"></script>
     <script defer src="/js/films-table.js"></script>
+    <!--<script defer src="/js/tdd-utils.js"></script>-->
+    <script defer src="./js/modal.js"></script>
     <title>Cinema progect</title>
 </head>
     
@@ -242,10 +244,7 @@
             <div class="table__footer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>
                 magna aliqua. Ut enim ad minim veniam.
-            </div>
-            
-                
-            
+            </div>   
             <!--
             <table class="table">
                 <thead class="table_top-row">
@@ -327,6 +326,36 @@
                         <button type="submit" class="gift_button">Получить подарок</button>
                     </div> 
                 </div>         
+            </div>
+            <div class="modal_wrapper">
+                <div class="modal">
+                    <div class="modal_form">
+                        <button class="modal_close">X</button>
+                        <form action="order.php" enctype="mulipart/form-data">
+                            <label class="modal__label">
+                                <input class="modal_entry-field active" type="text" name="name" required>
+                                <span class="modal__label-name">Введите Имя</span>
+                            </label>
+                            <label class="modal__label">
+                                <input class="modal_entry-field active" type="text" name="name" required>
+                                <span class="modal__label-name">Введите email</span>
+                            </label>
+                            <label class="modal__label">
+                                <select class="modal_entry-field modal_select" name="">
+                                    <option class="modal_entry-field" value="">Выберите подарок</option>
+                                    <option value="1">Бесплатный 3-ий билет</option>
+                                    <option value="2">Удвоим попкорн</option>
+                                    <option value="3">Coca-cola бесплатно</option>
+                                </select>
+                            </label>
+                            <div class="modal_pers-data">
+                                <input type="checkbox" id="pers-data" class="input__pers-data" required name="pers-data">
+                                <label for="pers-data" class="input__pers-data-text">Я согласен на обработку своих персональных данных</label>
+                            </div>
+                                <button class="modal_button" type="submit">Отправить</button>    
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
