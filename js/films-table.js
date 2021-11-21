@@ -68,6 +68,9 @@ const filmHelper = {
     getTime(){
         return this.time;
     },
+    getLink(){
+        return this.link
+    }
 };
 
 function renderFilmTableItem(film){
@@ -81,8 +84,8 @@ return `
             </svg>
         </label>
     </div>
-    <div class="table_cell table_row">${filmHelper.getTime.apply(films)}</div>
-    <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/838/" target="_block" class="table_references">${filmHelper.getTitle.apply(films)}</a></div>
+    <div class="table_cell table_row">${filmHelper.getTime.apply(film)}</div>
+    <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/${filmHelper.getLink.apply(film)}/" target="_block" class="table_references">${filmHelper.getTitle.apply(film)}</a></div>
     <div class="table_cell table_row">${film.genres.join(', ')}</div>
     `
 } 
@@ -96,11 +99,4 @@ for (let film of films) {
 
     
 }
-{
-    /* <div class="table_cell table_row">${film.time}</div>
-<div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/${film.link}/" target="_block" class="table_references">${film.name}</a></div>
-<div class="table_cell table_row">${film.genres.join(', ')}</div> */}
-
-
-    // 
 
