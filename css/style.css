@@ -137,7 +137,7 @@ a:hover {
 }
     
 .header__nav {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 500;
     color: white;
     display: flex;
@@ -207,14 +207,6 @@ a:hover {
 
 /* Почему мы? */
 
-
-/*
-#why-we {
-    margin-top: -51px;
-}
-Нужен-ли тут отрицательный маржин?
-*/
-
 .why-we_heading {
     margin: 2.55rem 0 5.6rem 0;
 }
@@ -256,7 +248,7 @@ a:hover {
     margin-bottom: 5.7rem;    
 }
 
-/*
+
 .table {
     width: 100%; 
     border-collapse: collapse;
@@ -264,27 +256,11 @@ a:hover {
     overflow: hidden;
 }
 
- */
-
 .table__wrapper {
     overflow-x: auto;
 }
- 
-.container__table {
-    display: grid;
-    grid-template-columns: 8% 28% 28% 36%;
-    border-top-left-radius: 0.625rem;
-    border-top-right-radius: 0.625rem;
-    color:white;
-    overflow: hidden;
-    min-width: 850px;
-}
 
 .table-body {
-    display: grid;
-    grid-template-columns: 8% 28% 28% 36%;
-    border-bottom-left-radius: 0.625rem;
-    border-bottom-right-radius: 0.625rem;
     color:white;
     overflow: hidden;
     min-width: 850px;
@@ -308,16 +284,10 @@ a:hover {
     font-size: 0.875rem;
     font-weight: 400;
 }
-.table_row_dark {
+.table_row:nth-child(odd) {
     background-color: #373737;
 }
 
-.table_bottom__radius-left {
-    border-bottom-left-radius: 0.625rem;
-}
-.table_bottom__radius-right {
-    border-bottom-right-radius: 0.625rem;
-}
 .table_cell {
     padding: 0.75rem;
     line-height: 1.15;
@@ -445,7 +415,6 @@ a:hover {
 }
 /* Модальное окно*/
 .modal {
-    display: none;
     position: fixed;
     z-index: 1;
     top: 25%;
@@ -461,6 +430,11 @@ a:hover {
 .modal_wrapper {
     display: none;
 }
+
+.active {
+    display: block;
+}
+
 
 .modal_wrapper:before {
 	content: '';
@@ -527,6 +501,16 @@ a:hover {
 .modal_entry-field:focus {
     background-color: white;
     border: #A3CC40 2px solid;
+}
+
+.active-input{
+    background-color: white;
+    border: #A3CC40 2px solid;
+}
+
+.error-input {
+    background-color: white;
+    border: red 2px solid;
 }
 
 .modal_entry-field:hover {
@@ -877,19 +861,6 @@ a:hover {
     box-sizing: border-box;
 }
 
-/*.feedback_entry-field.active {
-    background-color: white;
-    border: #A3CC40 2px solid;
-}
-
-.feedback_entry-field.active ~ .feedback__label-name {
-    color: #333;
-    background-color: #fff;
-    padding: 0 0.3125rem;
-    top: 0;
-    transition: 0.3s;
-}
-*/
 
 .feedback_entry-field:focus {
     background-color: white;
@@ -921,18 +892,6 @@ a:hover {
     padding: 1rem 0 0rem 1rem;
 }
 
-/* .feedback_field-for_mail {
-    margin-bottom: 0.625rem;
-}
-
-.feedback_file {
-    border-radius: 0.3125rem;
-    border: none;
-    font-size: 0.875rem;
-    color: #A1A1A1;
-    margin-bottom: 0.625rem;
-}
-*/
 
 
 .feedback_pers-data {

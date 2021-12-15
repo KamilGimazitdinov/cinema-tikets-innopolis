@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/reset.css" type="text/css"/>
@@ -211,90 +211,23 @@
         <div class="container">
             <h2 class="section_headers table_title">Выберите фильм</h2>
             <div class="table__wrapper"> <!-- -->
-                <div class="container__table">
                     <!--верхняя строка-->
-                    <div class="table_top-row"></div>
-                    <div class="table_cell table_top-row">Начало сеанса<img src="./images/tablica/treygvverh.svg" class="table_icon-size" alt="треугольник вверх" style="padding: 2px 3.5px 1.8px 4px; margin-left: 6px;"></div>
-                    <div class="table_cell table_top-row ">Название фильма<img src="./images/tablica/treygvniz.svg" class="table_icon-size" alt="треугольник вниз" style="padding: 2px 4px 2px 3.5px; margin-left: 12px;"></div>
-                    <div class="table_cell table_top-row">Жанр</div>
-                    <div id="table-body" class="table-body"></div>
-                    <!--Первая строк
-                    <div class="table_check table_row table_row_dark"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
-                    <div class="table_cell table_row table_row_dark">10:00</div>
-                    <div class="table_cell table_row table_row_dark"><a href="https://www.kinopoisk.ru/film/838/" target="_block" class="table_references">Человек-паук</a></div>
-                    <div class="table_cell table_row table_row_dark">Фантастика, боевик, приключения</div>
-                    <!--вторая строка
-                    <div class="table_check table_row"><img src="./images/tablica/galochkagreen.svg" class="table_icon-size" alt="галочка"></div>
-                    <div class="table_cell table_row">12:00</div>
-                    <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/1122114/" target="_block" class="table_references">Собачья жизнь 2</a></div>
-                    <div class="table_cell table_row">Фэнтэзи, драма, комедия</div>
-                    <!--третья строка
-                    <div class="table_check table_row table_row_dark"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
-                    <div class="table_cell table_row table_row_dark">14:00</div>
-                    <div class="table_cell table_row table_row_dark"><a href="https://www.kinopoisk.ru/film/846824/" target="_block" class="table_references">История игрушек 4</a></div>
-                    <div class="table_cell table_row table_row_dark">Мультфильм, фэнтэзи, комедия</div>
-                    <!--четвертая строка
-                    <div class="table_check table_row table_bottom__radius-left"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></div>
-                    <div class="table_cell table_row">16:00</div>
-                    <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/693730/" target="_block" class="table_references">Люди в чёрном: Интэрнэшнл</a></div>
-                    <div class="table_cell table_row table_bottom__radius-right">Фантастика, боевик, комедия</div>
-                    <!--подвальная строка--> 
-                </div>
+                <table class="table">
+                    <thead class="table_top-row">
+                        <tr>
+                            <th></th>
+                            <th class="table_cell">Начало сеанса<img src="./images/tablica/treygvverh.svg" class="table_icon-size" alt="треугольник вверх" style="padding: 2px 3.5px 1.8px 4px; margin-left: 6px;"></th>
+                            <th class="table_cell">Название фильма<img src="./images/tablica/treygvniz.svg" class="table_icon-size" alt="треугольник вниз" style="padding: 2px 4px 2px 3.5px; margin-left: 12px;"></th>
+                            <th class="table_cell">Жанр</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body" class="table-body"></tbody>
+                </table>
             </div>
             <div class="table__footer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>
                 magna aliqua. Ut enim ad minim veniam.
             </div>   
-            <!--
-            <table class="table">
-                <thead class="table_top-row">
-                    <tr>
-                        <th></th>
-                        <th class="table_cell">Начало сеанса<img src="./images/tablica/treygvverh.svg" class="table_icon-size" alt="треугольник вверх" style="padding: 2px 3.5px 1.8px 4px; margin-left: 6px;"></th>
-                        <th class="table_cell">Название фильма<img src="./images/tablica/treygvniz.svg" class="table_icon-size" alt="треугольник вниз" style="padding: 2px 4px 2px 3.5px; margin-left: 12px;"></th>
-                        <th class="table_cell">Жанр</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <td colspan="4" class="table_footer">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>
-                        magna aliqua. Ut enim ad minim veniam.
-                        </td>
-                    </tr> 
-                </tfoot>
-                <tbody>
-                    <tr class="table_row table_row_dark">
-                        <td class="table_check"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></td>
-                        <td class="table_cell">10:00</td>
-                        <td class="table_cell"><a href="https://www.kinopoisk.ru/film/838/" target="_block" class="table_references">Человек-паук</a></td>
-                        <td class="table_cell">Фантастика, боевик, приключения</td>
-                    </tr>
-                    <tr class="table_row">
-                        <td class="table_check"><img src="./images/tablica/galochkagreen.svg" class="table_icon-size" alt="галочка"></td>
-                        <td class="table_cell">12:00</td>
-                        <td class="table_cell"><a href="https://www.kinopoisk.ru/film/1122114/" target="_block" class="table_references">Собачья жизнь 2</a></td>
-                        <td class="table_cell">Фэнтэзи, драма, комедия</td>
-                    </tr>
-                    <tr class="table_row table_row_dark">
-                        <td class="table_check"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></td>
-                        <td class="table_cell">14:00</td>
-                        <td class="table_cell"><a href="https://www.kinopoisk.ru/film/846824/" target="_block" class="table_references">История игрушек 4</a></td>
-                        <td class="table_cell">Мультфильм, фэнтэзи, комедия</td>
-                    </tr>
-                    <tr class="table_row">
-                        <td class="table_check table_bottom__radius-left"><img src="./images/tablica/galochkawh.svg" class="table_icon-size" alt="галочка"></td>
-                        <td class="table_cell">16:00</td>
-                        <td class="table_cell"><a href="https://www.kinopoisk.ru/film/693730/" target="_block" class="table_references">Люди в чёрном: Интэрнэшнл</a></td>
-                        <td class="table_cell table_bottom__radius-right">Фантастика, боевик, комедия</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="table__footer">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br>
-                magna aliqua. Ut enim ad minim veniam.
-            </div>
-            -->
         </div>
     </section>
        
@@ -330,16 +263,22 @@
             <div class="modal_wrapper">
                 <div class="modal">
                     <div class="modal_form">
-                        <button class="modal_close">X</button>
-                        <form action="order.php" enctype="mulipart/form-data">
+                        <button class="modal_close">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="17.5" cy="17.5" r="17.5" fill="#A3CC40"/>
+                                <path d="M25.5363 11.8271L23.9176 10.2084L17.5 16.626L11.0824 10.2084L9.46362 11.8271L15.8812 18.2447L9.46362 24.6623L11.0824 26.2811L17.5 19.8635L23.9176 26.2811L25.5363 24.6623L19.1187 18.2447L25.5363 11.8271Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <form>
                             <label class="modal__label">
                                 <input class="modal_entry-field active" type="text" name="name" required>
                                 <span class="modal__label-name">Введите Имя</span>
                             </label>
                             <label class="modal__label">
-                                <input class="modal_entry-field active" type="text" name="name" required>
+                                <input class="modal_entry-field active" id="input" type="text" name="email" required>
                                 <span class="modal__label-name">Введите email</span>
                             </label>
+                            <div id="error"></div>
                             <label class="modal__label">
                                 <select class="modal_entry-field modal_select" name="">
                                     <option class="modal_entry-field" value="">Выберите подарок</option>

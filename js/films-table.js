@@ -69,34 +69,38 @@ const filmHelper = {
         return this.time;
     },
     getLink(){
-        return this.link
-    }
+        return this.link;
+    },
+    getGenres(){
+        return this.genres;
+    },
 };
 
 function renderFilmTableItem(film){
 
 return `
-    <div class="table_check table_row">
-        <label>
-            <input type="checkbox" class="table__input">
-            <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z" fill="white"/>
-            </svg>
-        </label>
-    </div>
-    <div class="table_cell table_row">${filmHelper.getTime.apply(film)}</div>
-    <div class="table_cell table_row"><a href="https://www.kinopoisk.ru/film/${filmHelper.getLink.apply(film)}/" target="_block" class="table_references">${filmHelper.getTitle.apply(film)}</a></div>
-    <div class="table_cell table_row">${film.genres.join(', ')}</div>
+    <tr class="table_row">
+        <td class="table_check">
+            <label>
+                <input type="checkbox" class="table__input">
+                <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z" fill="white"/>
+                </svg>
+            </label>
+        </td>
+        <td class="table_cell">${filmHelper.getTime.apply(film)}</td>
+        <td class="table_cell"><a href="https://www.kinopoisk.ru/film/${filmHelper.getLink.apply(film)}/" target="_block" class="table_references">${filmHelper.getTitle.apply(film)}</a></td>
+        <td class="table_cell">${filmHelper.getGenres.apply(film).join(', ')}</td>
+    </tr>
     `
 } 
 
 for (let film of films) {
     console.log(film);
 
-    if (!(film.rate === 'R' || film.rate === 'NC-17')){
+    if (!(film.rate === 'R' && film.rate === 'NC-17')){
         div.innerHTML += renderFilmTableItem(film);
     }
 
     
 }
-
